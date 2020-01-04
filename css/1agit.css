@@ -1,0 +1,5208 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+html {
+	font-size: 16px;
+}
+@font-face{
+font-family: 'Montserrat', sans-serif;
+src: url('../font/montserrat-regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+.wrapperStartPage{
+	display: block;
+	border: 0px solid blue;
+	width: 100%;
+}
+.imageStartBckgrnd{
+	width: 100%;
+	z-index: 1;
+	display: block;
+	position: relative;
+}
+.wrapSrartup{
+	border: 0px solid blue;
+	width: 70.83%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -49em;
+	z-index: 3;
+	display: block;
+	position: relative;
+}
+@media only screen and ( max-width: 1800px ) {
+	.wrapSrartup{
+		margin-top: -46.0rem;
+	}
+}
+@media only screen and ( max-width: 1700px ) {
+	.wrapSrartup{
+		margin-top: -43.5rem;
+	}
+}
+@media only screen and ( max-width: 1600px ) {
+	.wrapSrartup{
+		margin-top: -41.0rem;
+	}
+}
+@media only screen and ( max-width: 1500px ) {
+	.wrapSrartup{
+		margin-top: -38.5rem;
+	}
+}
+@media only screen and ( max-width: 1400px ) {
+	.wrapSrartup{
+		margin-top: -36.0rem;
+	}
+}
+@media only screen and ( max-width: 1300px ) {
+	.wrapSrartup{
+		margin-top: -33.5rem;
+	}
+}
+@media only screen and ( max-width: 1200px ) {
+	.wrapSrartup{
+		margin-top: -31.0rem;
+	}
+}
+@media only screen and ( max-width: 1100px ) {
+	.wrapSrartup{
+		margin-top: -28.5rem;
+	}
+}
+@media only screen and ( max-width: 1000px ) {
+	.wrapSrartup{
+		margin-top: -26.0rem;
+	}
+}
+@media only screen and ( max-width: 900px ) {
+	.wrapSrartup{
+		margin-top: -23.5rem;
+		width: 80%;
+	}
+}
+@media only screen and ( max-width: 800px ) {
+	.wrapSrartup{
+		margin-top: -21.0rem;
+		width: 95%;
+	}
+}
+@media only screen and ( max-width: 700px ) {
+	.wrapSrartup{
+		margin-top: -18.5rem;
+		width: 95%;
+	}
+}
+@media only screen and ( max-width: 650px ) {
+	.wrapSrartup{
+		margin-top: -17.5rem;
+	}
+}
+@media only screen and ( max-width: 600px ) {
+	.wrapSrartup{
+		margin-top: -16.5rem;
+	}
+}
+@media only screen and ( max-width: 550px ) {
+	.wrapSrartup{
+		margin-top: -15.0rem;
+	}
+}
+@media only screen and ( max-width: 500px ) {
+	.wrapSrartup{
+		margin-top: -13.8rem;
+	}
+}
+@media only screen and ( max-width: 450px ) {
+	.wrapSrartup{
+		margin-top: -12.0rem;
+	}
+}
+@media only screen and ( max-width: 400px ) {
+	.wrapSrartup{
+		margin-top: -10.5rem;
+	}
+}
+@media only screen and ( max-width: 350px ) {
+	.wrapSrartup{
+		margin-top: -10.0rem;
+	}
+}
+@media only screen and ( max-width: 330px ) {
+	.wrapSrartup{
+		margin-top: -9.0rem;
+	}
+}
+@media only screen and ( max-width: 300px ) {
+	.wrapSrartup{
+		margin-top: -8.0rem;
+	}
+}
+@media only screen and ( max-width: 260px ) {
+	.wrapSrartup{
+		margin-top: -7.0rem;
+	}
+}
+@media only screen and ( max-width: 230px ) {
+	.wrapSrartup{
+		margin-top: -6.0rem;
+	}
+}
+.srartup{
+	font-family: Montserrat Bold; 
+        text-decoration: none;
+	text-align: center;
+     	font-size: 1.5em; 
+	line-height: 1.5em;
+	color: white;
+	font-weight: bold;
+}
+
+/*BEGIN Menu*/
+.simplehorzmenu{	/*общий прямолугольник меню: DIV*/
+	width: 36rem;		/*общая ширина меню - получаем экспериментально в зависимости от шрифта*/
+	height: 2.5rem;	/*макс возможная высота пунктов меню*/
+	border: 0px solid red/*transparent*/;
+	background-color: transparent;
+	margin-left: auto;
+	margin-right: 0;
+	margin-top: -2.25rem;
+	padding-top: 0px;
+	z-index: 3;
+	display: block;
+	position: relative;
+}
+@media only screen and ( max-width: 1300px ) {
+	.simplehorzmenu{
+		width: 33.6rem;
+	}
+}
+@media only screen and ( max-width: 700px ) {
+	.simplehorzmenu{
+		width: 26.6rem;
+	}
+}
+@media only screen and ( max-width: 600px ) {
+	.simplehorzmenu{
+		width: 6.25rem;
+	}
+}
+@media only screen and ( max-width: 330px ) {
+	.simplehorzmenu{
+		width: 4.25rem;
+	}
+}
+.horzmenu{	/*прямолугольник немобильного меню: DIV*/
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+	margin: 0px;
+	padding: 0px;
+	display: block;
+}
+@media only screen and ( max-width: 600px ) {
+	.horzmenu{	/*прямолугольник немобильного меню: DIV*/
+		display: none;
+	}
+}
+.horzmenu>ul{	/*основное меню (общий список главного меню)*/
+	list-style: none outside;	/*выключаем маркеры*/
+	margin-left: 0rem;	/*ul имеет свой отступ от левого край - убираем его*/
+}
+@media only screen and ( max-width: 1300px ) {
+	.horzmenu>ul{
+		margin-left: 0.0rem;
+	}
+}
+@media only screen and ( max-width: 600px ) {
+	.horzmenu>ul{
+		margin-left: -9.2rem;
+	}
+}
+.horzmenu>ul>li{	/*основное меню: отдельный пункт меню*/
+	font-size: .9rem;
+	font-family: 'Montserrat', sans-serif;
+	font-style: normal;
+	float: left;		/*группируем в левую сторону / иначе пункты стоят в столбик*/
+	height: 2.5rem;
+	margin-top: 0rem;	/*-30px;приподымаем вверх, т.к. <li> идёт с отступом от div=[height(40)/2-1]*/
+}
+@media only screen and ( max-width: 1300px ) {
+	.horzmenu>ul>li{
+		font-size: .8rem;
+	}
+}
+.horzmenu>ul>li:hover{	/*пункты основного меню (прямолугольник) при наведении крысы*/
+	background: radial-gradient(circle, #aca8a8, #a8132a);
+/*	background-image: url(../img/selitemmenu.png);
+	background-repeat: no-repeat;
+	background-position-x: 60%;
+	background-position-y: 1.4em;
+	background-size: 100% 100%;
+	background-size: auto;*/
+	border: 0px solid magenta;
+}
+.horzmenu>ul>li>a{	/*основное меню: отдельный пункт меню: текстовая ссылка*/
+	display: block;		/*блочный тип данных*/
+	text-decoration: none;	/*отключаем подчеркивание ссылки*/
+	text-align: center;	/*по центру по горизонтали*/
+	color: #ffffff;		/*цвет текста*/
+	margin-top: 0rem;	/*приподымаем вверх т.к. <a> идет с оступом от <li>*/
+	margin-left: 0px;	/*расстояние между пунктами меню / */
+	border: 0px solid red/*transparent*/;	/*рамка вокруг пункта меню*/
+	padding-left: 1rem;	/*отступ рамки от текста - пункт меню*/
+	padding-right: 1rem;	/*отступ рамки от текста - пункт меню*/
+/*	width: 100px;*/		/*минимальная ширина ячейки*/
+	line-height: 2.5rem;
+	height: 2.5rem;
+}
+@media only screen and ( max-width: 700px ) {
+	.horzmenu>ul>li>a{
+		padding-left: .5rem;	/*отступ рамки от текста - пункт меню*/
+		padding-right: .5rem;	/*отступ рамки от текста - пункт меню*/
+	}
+}
+
+.horzmenu>ul>li:hover>a{	/*основное меню: отдельный пункт меню: текстовая ссылка - при наведении крысы*/
+/*	color: #333333;*/		/*цвет текста*/
+}
+
+.mobilemenu{	/*прямолугольник мобильного меню: DIV*/
+	width: 90%;
+	height: 90%;
+	background-color: transparent;	/*фон DIV - старое меню*/
+	float: left;
+	border: 0px solid black;
+	padding: 0px;
+	display: none;
+}
+@media only screen and ( max-width: 600px ) {
+	.mobilemenu{	
+		display: block;
+	}
+}
+.mobilemenu>a>img{
+	width: 72px;
+	height: 51px;
+}
+@media only screen and ( max-width: 330px ) {
+	.mobilemenu>a>img{
+		width: 54px;
+		height: 38px;
+	}
+}
+.modalMenu{
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.5);/*затеняем всю прочую старицу - фон*/
+	z-index: 99999;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	display: none;
+	pointer-events: none;
+	touch-action: none;
+}
+.modalMenu:target {
+	display: block;
+	pointer-events: auto;
+}
+.modalMenu>div {
+	width: 50%;
+	position: relative;
+	z-index: 10;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #ffffff;/*фон мобильного меню*/
+}
+.close {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 36px;
+	text-decoration: none;
+	font-weight: bold;
+	border-radius: 12px;
+	box-shadow: 1px 1px 3px #000;
+}
+.close:hover{
+	background: #a8132a;
+}
+.modalMenu>div>ul {
+	list-style: none outside;	/*выключаем маркеры*/
+	margin-left: -2.5rem;	/*ul имеет свой отступ от левого край - убираем его*/
+}
+.modalMenu>div>ul>li{	/*основное меню: отдельный пункт меню*/
+	font-size: .9rem;	/*размер шрифта/букв*/
+	font-family: 'Montserrat', sans-serif; 	/*тип/название шрифта*/
+	font-style: normal;	/*курсив/наклон/нормал*/
+/*	float: left;*/		/*группируем в левую сторону / иначе пункты стоят в столбик*/
+	height: 1.5rem;		/*100px;5em;высоту подгадывать к высоте картинки, выводящейся в hover: media для 620*/
+	margin-top: 0rem;	/*-30px;приподымаем вверх, т.к. <li> идёт с отступом от div=[height(40)/2-1]*/
+	border: 1px solid transparent;
+}
+.modalMenu>div>ul>li:hover{	/*пункты основного меню (прямолугольник) при наведении крысы*/
+/*	background-repeat: no-repeat;
+	background-image: url(../img/selitemmenu.png);
+	background-position-x: 60%;
+	background-position-y: 1.4em;
+	background-size: 100% 100%;
+	background-size: auto;
+	background-repeat: no-repeat;*/
+	border: 0px solid magenta;
+}
+.modalMenu>div>ul>li>a{	/*основное меню: отдельный пункт меню: текстовая ссылка*/
+	display: block;		/*блочный тип данных*/
+	text-decoration: none;	/*отключаем подчеркивание ссылки*/
+	text-align: center;	/*по центру по горизонтали*/
+	color: #ffffff;		/*цвет текста*/
+	margin-top: 0.125rem;	/*приподымаем вверх т.к. <a> идет с оступом от <li>*/
+	margin-left: auto;	/*расстояние между пунктами меню / */
+	margin-right: auto;	/*расстояние между пунктами меню / */
+	border: 1px solid black;	/*рамка вокруг пункта меню*/
+	padding-left: .5em;	/*отступ рамки от текста - пункт меню*/
+	padding-right: .5em;	/*отступ рамки от текста - пункт меню*/
+        border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	width: 40%;
+	min-width: 80px;		/*минимальная ширина ячейки*/
+	background: #a8132a;
+}
+.modalMenu>div>ul>li:hover>a{	/*основное меню: отдельный пункт меню: текстовая ссылка - при наведении крысы*/
+/*	color: #333333;*/		/*цвет текста*/
+	color: white;		/*цвет текста*/
+	background: radial-gradient(circle, #aca8a8, #a8132a);
+}
+/*END Menu*/
+.wel{
+	border: 0px solid blue;
+	min-width: 25rem;
+	height: 5rem;
+	box-sizing: border-box;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 15rem;
+	position: relative;
+	z-index: 2;
+	display: block;
+}
+@media only screen and ( max-width: 1500px ) {
+	.wel{
+		margin-top: 10rem;
+	}
+}
+@media only screen and ( max-width: 1300px ) {
+	.wel{
+		margin-top: 7rem;
+	}
+}
+@media only screen and ( max-width: 1000px ) {
+	.wel{
+		margin-top: 5rem;
+	}
+}
+@media only screen and ( max-width: 800px ) {
+	.wel{
+		margin-top: 3rem;
+	}
+}
+@media only screen and ( max-width: 600px ) {
+	.wel{
+		margin-top: 1rem;
+	}
+}
+@media only screen and ( max-width: 500px ) {
+	.wel{
+		margin-top: 1.5rem;
+		height: 3.5rem;
+	}
+}
+@media only screen and ( max-width: 400px ) {
+	.wel{
+		margin-top: 1rem;
+		height: 3rem;
+		min-width: 10rem;
+	}
+}
+@media only screen and ( max-width: 330px ) {
+	.wel{
+		margin-top: .25rem;
+		height: 2.6rem;
+	}
+}
+@media only screen and ( max-width: 275px ) {
+	.wel{
+		height: 2.25rem;
+	}
+}
+.wel1{
+	display: block;
+     	margin-left: auto;
+	margin-right: auto;
+	margin-top: .5rem;
+
+	font-family: Montserrat Regular; 
+        text-decoration: none;
+	text-align: center;
+     	font-size: 2rem;
+     	line-height: 2rem;
+	color: white;
+}
+@media only screen and ( max-width: 500px ) {
+	.wel1{
+		font-size: 1.2rem;
+     		line-height: 1.2rem;
+	}
+}
+@media only screen and ( max-width: 330px ) {
+	.wel1{
+		font-size: 1rem;
+     		line-height: .8rem;
+		margin-top: .1rem;
+	}
+}
+.wel2{
+	display: block;
+     	margin-left: auto;
+	margin-right: auto; 
+	margin-top: .5rem;
+
+	font-family: Roboto Slab Regular; 
+        text-decoration: none;
+	text-align: center;
+     	font-size: 1rem;
+     	line-height: 1rem;
+	color: white;
+}
+@media only screen and ( max-width: 400px ) {
+	.wel2{
+		font-size: .8rem;
+     		line-height: .8rem;
+		margin-top: .2rem;
+	}
+}
+
+.button{
+	border: 1px solid transparent;
+	width: 10rem;
+	height: 3rem;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 6rem;
+	z-index: 2;
+	display: block;
+	position: relative;
+}
+@media only screen and ( max-width: 900px ) {
+	.button{
+		margin-top: 4rem;
+	}
+}
+@media only screen and ( max-width: 700px ) {
+	.button{
+		margin-top: 2rem;
+	}
+}
+@media only screen and ( max-width: 500px ) {
+	.button{
+		margin-top: .5rem;
+		width: 9rem;
+		height: 2.7rem;
+	}
+}
+@media only screen and ( max-width: 300px ) {
+	.button{
+		margin-top: .5rem;
+		height: 1.5rem;
+	}
+}
+@media only screen and ( max-width: 260px ) {
+	.button{
+		margin-top: .1rem;
+	}
+}
+@media only screen and ( max-width: 230px ) {
+	.button{
+		margin-top: .9rem;
+	}
+}
+.feat{
+	font-size: 1rem;
+	width: 100%; 
+	font-family: Montserrat Regular; 
+	font-style: normal;
+        color: #ffffff;
+        text-align: center;
+        line-height: 2rem;
+
+	border: 1px solid white;
+        -webkit-border-radius: .1rem;
+        -moz-border-radius: .1rem;
+        border-radius: .1rem; 
+	margin-top: auto;
+	margin-left: auto;
+	margin-right: auto;
+        height: 100%;
+	padding-left: 1.1rem;
+	padding-right: 1.1rem;
+        background: transparent;
+
+        cursor: pointer;
+        display: block;
+}
+.feat:hover{
+	background: radial-gradient(circle, #aca8a8, #a8132a);
+}
+@media only screen and ( max-width: 500px ) {
+	.feat{
+		font-size: .9rem;
+	        line-height: 1.8rem;
+	}
+}
+@media only screen and ( max-width: 300px ) {
+	.feat{
+	        line-height: 1rem;
+	}
+}
+@media only screen and ( max-width: 230px ) {
+	.feat{
+		color: Navy;
+		border: 1px solid Navy;
+	}
+}
+.services{
+	display: block;
+	box-sizing: border-box;
+        
+	border: 0px solid red;
+	width: 71.3%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3.0rem;
+}
+@media only screen and ( max-width: 1400px ) {
+	.services{
+		width: 81%;
+		
+	}
+}
+@media only screen and ( max-width: 1200px ) {
+	.services{
+		width: 98%;
+	}
+}
+
+.serv{
+	display: block;
+	box-sizing: border-box;
+       
+	border: 0px solid yellow;
+	width: 7rem;
+	height: 4rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+.serv1{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 1.3rem;
+	
+	font-family: Montserrat Bold; 
+        text-decoration: none;
+	text-align: center;
+     	font-size: 1.3rem; 
+	line-height: 1.5rem;
+	color: #555555;
+	font-weight: bold;
+}
+.hr35{
+	width: 35%;
+	border-top: 1px solid black;
+	margin-left: auto;
+	margin-right: auto;
+}
+.hr36{
+	width: 35%;
+	border-top: 1px solid black;
+	margin-top: 1.10rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+.we{
+	display: block;
+	box-sizing: border-box;
+
+	border: 0px solid red;
+	width: 28rem;
+	height: 2rem;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: .25rem;
+}
+@media only screen and ( max-width: 500px ) {
+	.we{
+		width: 100%;
+	}
+}
+@media only screen and ( max-width: 470px ) {
+	.we{
+		height: 4rem;
+	}
+}
+@media only screen and ( max-width: 240px ) {
+	.we{
+		height: 5rem;
+	}
+}
+.we1{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+
+	font-family: RobotoSlab; 
+	text-decoration: none;
+	text-align: center;
+	font-size: 1.1rem; 
+	line-height: 1.8rem;
+	color: #555555;
+}
+.Service{
+	display: block;
+        border-top: 0px solid red;
+	width: 90px;
+	height: 90px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.clean2{
+	display: block;
+	box-sizing: border-box;
+
+        border: 0px solid grey;
+/*        width: 12rem;*/
+	margin-top: 1.5rem;
+        margin-right: auto;
+        margin-left: auto;
+}
+.clean3{
+	display: block;
+        margin-right: auto;
+        margin-left: auto;
+
+	font-family: Montserrat; 
+	text-decoration: none;
+	text-align: center;
+	font-size: 1.0rem;
+	line-height: 1.5rem;
+	color: #6a6a6a;
+	font-weight: bold;
+}
+.lorem{
+	display: block;
+	box-sizing: border-box;
+
+	border: 0px solid grey;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1rem;
+}
+.lorem1{
+	display: block;
+        margin-right: auto;
+        margin-left: auto;
+
+	font-family: RobotoSlab; 
+	text-decoration: none;
+	text-align: center;
+	font-size: .9rem; 
+	line-height: 1.5rem;
+	color: #555555;
+	padding: 0 .5rem;
+}
+.ser1{
+	display: table-cell;
+	box-sizing: border-box;
+
+	border: 0px solid grey;
+	width: 20rem;
+/*	height: 15rem;*/
+	margin-left: auto;
+	margin-right: auto;
+}
+@media only screen and ( max-width: 600px ) {
+	.ser1{
+		display: block;
+		width: 100%;
+		margin-top: 2rem;
+	}
+}
+.wrap_serv1{
+	display: table;
+	box-sizing: border-box;
+
+	border: 0px solid grey;
+	width: 100%;
+	margin-top: 4.5rem;
+}
+@media only screen and ( max-width: 600px ) {
+	.wrap_serv1{
+		display: block;
+		margin-top: 0rem;
+	}
+}
+.marginleft{
+	margin-left: 0;
+	margin-right: auto;
+}
+.marginright{
+	margin-left: auto;
+	margin-right: 0;
+}
+.services{
+	display: block;
+	box-sizing: border-box;
+
+	border: 0px solid black;
+	width: 71.3%;
+	height:100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3.0rem;
+}
+
+@media only screen and ( max-width: 1600px ) {
+	.services{
+		width: 90%;
+	}
+}
+@media only screen and ( max-width: 1500px ) {
+	.services{
+		width: 81%;
+	}
+}
+@media only screen and ( max-width: 1400px ) {
+	.services{
+		width: 85%;
+	}
+}
+@media only screen and ( max-width: 1300px ) {
+	.services{
+		width: 90%;
+	}
+}
+@media only screen and ( max-width: 1200px ) {
+	.services{
+		width: 98%;
+	}
+}
+@media only screen and ( max-width: 1100px ) {
+	.services{
+		width: 100%;
+	}
+}
+@media only screen and ( max-width: 900px ) {
+	.services{
+		width: 100%;
+	}
+}
+@media only screen and ( max-width: 800px ) {
+	.services{
+		width: 100%;
+	}
+}
+@media only screen and ( max-width: 700px ) {
+	.services{
+		width: 100%;
+	}
+}
+.serv{
+       
+	border: 0px solid grey;
+	width: 7em;
+	height:4em;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:auto;
+	
+	
+}
+
+
+.serv1{
+	font-family: Montserrat Bold; 
+        text-decoration: none;
+	text-align: center;
+     	font-size: 1.3em; 
+	line-height: 1.5em;
+	color:#555555;
+	font-weight: bold;
+	display:block;
+}
+
+
+
+.we{
+       
+	border: 0px solid grey;
+	width: 32em;
+	height:2em;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:2em;
+	
+}
+@media only screen and ( max-width: 500px ) {
+	.we{
+		width: 20em;
+		height:3em;
+	}
+}
+@media only screen and ( max-width: 350px ) {
+	.we{
+		width: 18em;
+		height:3em;
+	}
+}
+@media only screen and ( max-width: 300px ) {
+	.we{
+		width: 15em;
+		height:3em;
+	}
+}
+@media only screen and ( max-width: 250px ) {
+	.we{
+		width: 12em;
+		height:5em;
+	}
+}
+@media only screen and ( max-width: 200px ) {
+	.we{
+		width: 10em;
+		height:5em;
+	}
+}
+.we1{
+	font-family: Roboto Slab Regular; 
+        text-decoration: none;
+	text-align: center;
+     	font-size: 1.1em; 
+	line-height: 1.5em;
+	color:#555555;
+	display:block;
+
+}
+
+.section{
+       
+	border: 0px solid grey;
+	width: 34em;
+	height:13em;
+	margin-left:auto;
+	margin-right: auto;
+	margin-top:auto;
+        float:left;
+	display: block;
+	position: relative;
+}
+@media only screen and ( max-width: 1300px ) {
+	.section{
+		width:25em;
+		height:12em;
+	}
+}
+@media only screen and ( max-width: 1200px ) {
+	.section{
+		width:25em;
+		height:12em;
+	}
+}
+@media only screen and ( max-width: 1100px ) {
+	.section{
+		width:25em;
+		height:12em;
+	}
+}
+@media only screen and ( max-width: 900px ) {
+	.section{
+		width: 20em;
+		height:14em;
+	}
+}
+@media only screen and ( max-width: 800px ) {
+	.section{
+		width: 20em;
+		height:14em;
+	}
+}
+@media only screen and ( max-width: 700px ) {
+	.section{
+		width: 18em;
+		height:24em;
+	}
+}
+@media only screen and ( max-width: 600px ) {
+	.section{
+		width: 15em;
+		height:25em;
+	}
+}
+@media only screen and ( max-width: 500px ) {
+	.section{
+		width: 12em;
+		height:25em;
+	}
+}
+@media only screen and ( max-width: 400px ) {
+	.section{
+		width: 8em;
+		height:44em;
+	}
+}
+@media only screen and ( max-width: 300px ) {
+	.section{
+		width: 7em;
+		height:50em;
+		
+	}
+}
+@media only screen and ( max-width: 230px ) {
+	.section{
+		width: 6em;
+		height:60em;
+		
+	}
+}
+@media only screen and ( max-width: 200px ) {
+	.section{
+		width: 6em;
+		height:60em;
+		
+	}
+}
+.section2{
+       
+	border: 0px solid grey;
+	width: 34em;
+	height:13em;
+	margin-left: auto;
+	margin-right:auto;
+	margin-top: auto;
+        float:right;
+	display: block;
+	position: relative;
+}
+@media only screen and ( max-width: 1300px ) {
+	.section2{
+		width:25em;
+		height:12em;
+	}
+}
+@media only screen and ( max-width: 1200px ) {
+	.section2{
+		width:25em;
+		height:12em;
+	}
+}
+@media only screen and ( max-width: 1100px ) {
+	.section2{
+		width:25em;
+		height:12em;
+	}
+}
+@media only screen and ( max-width: 900px ) {
+	.section2{
+		width: 20em;
+		height:14em;
+	}
+}
+@media only screen and ( max-width: 800px ) {
+	.section2{
+		width: 20em;
+		height:14em;
+	}
+}
+@media only screen and ( max-width: 700px ) {
+	.section2{
+		width: 18em;
+		height:24em;
+	}
+}
+@media only screen and ( max-width: 600px ) {
+	.section2{
+		width: 15em;
+		height:25em;
+	}
+}
+@media only screen and ( max-width: 500px ) {
+	.section2{
+		width: 12em;
+		height:25em;
+	}
+}
+@media only screen and ( max-width: 400px ) {
+	.section2{
+		width: 8em;
+		height:44em;
+	}
+}
+@media only screen and ( max-width: 300px ) {
+	.section2{
+		width: 7em;
+		height:50em;
+	}
+}
+@media only screen and ( max-width: 230px ) {
+	.section2{
+		width: 6em;
+		height:60em;
+		
+	}
+}
+@media only screen and ( max-width: 200px ) {
+	.section2{
+		width: 6em;
+		height:60em;
+		
+	}
+}
+.lorem1{
+	font-family: Roboto Slab Regular; 
+        text-decoration: none;
+	
+     	font-size: 1em; 
+	line-height: 1.5em;
+	color:#555555;
+	display: block;
+
+}
+.services{
+	display: block;
+	box-sizing: border-box;
+
+	border: 0px solid blue;
+	width: 71.3%;
+	height:100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20.0rem;
+}
+@media only screen and ( max-width: 1800px ) {
+	.services{
+		width: 90%;
+	}
+}
+@media only screen and ( max-width: 1700px ) {
+	.services{
+		width: 90%;
+	}
+}
+@media only screen and ( max-width: 1600px ) {
+	.services{
+		width: 90%;
+	}
+}
+@media only screen and ( max-width: 1500px ) {
+	.services{
+		width: 90%;
+	}
+}
+@media only screen and ( max-width: 1400px ) {
+	.services{
+		width: 100%;
+	}
+}
+@media only screen and ( max-width: 1300px ) {
+	.services{
+		width: 100%;
+	}
+}
+@media only screen and ( max-width: 1200px ) {
+	.services{
+		width: 98%;
+	}
+}
+@media only screen and ( max-width: 1100px ) {
+	.services{
+		width: 100%;
+	}
+}
+@media only screen and ( max-width: 900px ) {
+	.services{
+		width: 100%;
+	}
+}
+@media only screen and ( max-width: 800px ) {
+	.services{
+		width: 100%;
+	}
+}
+@media only screen and ( max-width: 700px ) {
+	.services{
+		width: 100%;
+	}
+}
+.latest{
+       
+	border: 0px solid grey;
+	width: 11em;
+	height:4em;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	display:block;
+	
+}
+.serv1{
+	font-family: Montserrat Bold; 
+        text-decoration: none;
+	text-align: center;
+     	font-size: 1.3em; 
+	line-height: 1.5em;
+	color:#555555;
+	font-weight: bold;
+	display:block;
+}
+
+/*BEGIN Menu2*/
+.menu2{	/*общий прямолугольник меню: DIV*/
+	width: 40%;		/*общая ширина меню - получаем экспериментально в зависимости от шрифта*/
+	height: 3rem;	/*макс возможная высота пунктов меню*/
+	border: 0px solid red/*transparent*/;
+	background-color: transparent;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5rem;
+	padding-top: 0px;
+	z-index: 3;
+	display: block;
+	position: relative;
+}
+@media only screen and ( max-width: 1500px ) {
+	.menu2{
+		width: 45%;
+	}
+}	
+@media only screen and ( max-width: 1300px ) {
+	.menu2{
+		width: 50%;
+	}
+}	
+@media only screen and ( max-width: 1050px ) {
+	.menu2{
+		width: 55%;
+	}
+}
+@media only screen and ( max-width: 950px ) {
+	.menu2{
+		width: 60%;
+	}
+}
+@media only screen and ( max-width: 900px ) {
+	.menu2{
+		width: 70%;
+	}
+}
+@media only screen and ( max-width: 750px ) {
+	.menu2{
+		width: 75%;
+	}
+}
+@media only screen and ( max-width: 700px ) {
+	.menu2{
+		width: 85%;
+	}
+}
+@media only screen and ( max-width: 650px ) {
+	.menu2{
+		width: 90%;
+	}
+}
+@media only screen and ( max-width: 570px ) {
+	.menu2{
+		width: 95%;
+	}
+}
+#simplehorzmenu2{	/*прямолугольник меню*/
+/*	width: 100%;	*/
+	background-color: transparent;
+	border: 0px solid black;
+	width: 33rem;
+	height: 100%; 
+	margin-top: 0;
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+}
+@media only screen and ( max-width: 600px ) {/*Выключаем*/
+	#simplehorzmenu2{
+		display: none;
+	}
+}
+#simplehorzmenu2>ul{	/*основное меню (общий список главного меню)*/
+	list-style: none outside;	/*выключаем маркеры*/
+}
+#simplehorzmenu2>ul>li{	/*основное меню: отдельный пункт меню*/
+	font-size: 80%;
+	font-family: 'RobotoSlab', serif;
+	font-style: normal;
+	float: left;/*группируем в левую сторону / иначе пункты стоят в столбик*/
+	height: 35px;
+	border: 0px solid blue;
+}
+#simplehorzmenu2>ul>li:hover{	/*пункты основного меню (прямолугольник) при наведении крысы*/
+	background: radial-gradient(circle, #aca8a8, #a8132a);
+	border-left: 1px solid #aca8a8;
+}
+#simplehorzmenu2>ul>li>a{	/*основное меню: отдельный пункт меню: текстовая ссылка*/
+	display: block;
+	padding: 1px;
+	width: 100px;		/*минимальная ширина ячейки*/
+	text-decoration: none;
+	text-align: center;
+	color: #555555;
+	line-height: 2rem;
+}
+#simplehorzmenu2>ul>li:hover>a{	/*основное меню: отдельный пункт меню: текстовая ссылка - при наведении крысы*/
+	color: white;
+}
+.mobilemenu2{	/*прямолугольник мобильного меню: DIV*/
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+	border: 0px solid black;
+	padding: 0px;
+	display: none;
+	border: 0px solid black;
+}
+@media only screen and ( max-width: 600px ) {/*Включаем*/
+	.mobilemenu2{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+.mobilemenu2>a>img{
+	width: 72px;
+	height: 51px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.modalMenu2{
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.7);/*затеняем всю прочую старицу - фон*/
+	z-index: 99999;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	display: none;
+	pointer-events: none;
+	touch-action: none;
+}
+.modalMenu2:target {
+	display: block;
+	pointer-events: auto;
+}
+.modalMenu2>div{
+	width: 50%;
+	position: relative;
+	z-index: 10;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #ffffff;/*фон мобильного меню*/
+}
+.close2 {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -0px;
+	text-align: center;
+	top: -0px;
+	width: 36px;
+	text-decoration: none;
+	font-weight: bold;
+	border-radius: 12px;
+	box-shadow: 1px 1px 3px #000;
+}
+.close2:hover{
+	background: #a8132a;
+}
+.modalMenu2>div>ul {
+	list-style: none outside;	/*выключаем маркеры*/
+	margin-left: -.5em;	/*ul имеет свой отступ от левого край - убираем его*/
+}
+.modalMenu2>div>ul>li{	/*основное меню: отдельный пункт меню*/
+	font-size: .9rem;
+	font-family: 'RobotoSlab', serif;
+	font-style: normal;
+/*	float: left;*/		/*группируем в левую сторону / иначе пункты стоят в столбик*/
+	height: 1.5rem;
+	margin-top: 0rem;
+	width: 6rem;
+	border: 1px solid transparent;
+}
+.modalMenu2>div>ul>li:hover{	/*пункты основного меню (прямолугольник) при наведении крысы*/
+	background: radial-gradient(circle, #aca8a8, #a8132a);
+	border-left: 1px solid #aca8a8;
+}
+.modalMenu2>div>ul>li>a{	/*основное меню: отдельный пункт меню: текстовая ссылка*/
+	display: block;
+	text-decoration: none;
+	text-align: left;
+	color: #555555;
+	margin-top: 0.125rem;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 .5rem;
+	width: 100%;
+	background: transparent;
+}
+.modalMenu2>div>ul>li:hover>a{	/*основное меню: отдельный пункт меню: текстовая ссылка - при наведении крысы*/
+	color: white;		/*цвет текста*/
+}
+/*END Menu2*/									
+
+
+
+
+/*slider at Igor v.4.02*/
+#slider_0{/*общий DIV слайдера*/
+	border: 0px solid red;
+	width: 71.3%;
+	height: 25rem;
+	margin: 0;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30rem;
+	padding: 0;
+
+	box-sizing: border-box;
+	display: block;
+	overflow: hidden;
+}
+@media only screen and ( max-width: 1100px ) {
+	#slider_0{
+		width: 85%;
+	}
+}
+@media only screen and ( max-width: 900px ) {
+	#slider_0{
+		width: 95%;
+	}
+}
+@media only screen and ( max-width: 600px ) {
+	#slider_0{
+		width: 98%;
+	}
+}
+@media only screen and ( max-width: 400px ) {
+	#slider_0{
+	        margin-top: 50rem;
+		width: 98%;
+	}
+}
+@media only screen and ( max-width: 230px ) {
+	#slider_0{
+	        margin-top: 70rem;
+		width: 98%;
+	
+	}
+}
+#slider_0 > #sliderTool_0{/*общий DIV элементов управления слайдера. На текущий момент (15.09.2019) поддерживаются только кнопки "left"-"Right", которые позиционируются соответственно по левому и правому краям <div id="sliderTool">*/
+	border: 1px solid transparent;
+	display: block;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	
+	background-color: transparent;
+	width: 94.1%;
+	height: 38px;
+	margin-top: -17.0rem;
+	margin-right: auto;
+	margin-left: auto;
+}
+@media only screen and ( max-width: 1600px ) {
+	#slider_0 > #sliderTool_0{
+		margin-top: -19.0rem;
+	}
+}
+@media only screen and ( max-width: 1300px ) {
+	#slider_0 > #sliderTool_0{
+		margin-top: -21.0rem;
+	}
+}
+@media only screen and ( max-width: 700px ) {
+	#slider_0 > #sliderTool_0{
+		margin-top: -23.0rem;
+	}
+}
+@media only screen and ( max-width: 540px ) {
+	#slider_0 > #sliderTool_0{
+		margin-top: -27.1rem;
+		width: 75px;
+	}
+}
+#slider_0 > #sliderTool_0 > .arrowL{/*кнопка "Влево"="Previous"="Left". Автоматически позиционируется по левому краю рамки sliderTool. Картинку на фон добавлять методом background-image: url("./img/...png")*/
+	float: left;
+	display: block;
+	position: relative;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+
+	border: 1px solid transparent;
+	background-color: transparent;
+	background: url(../master/img/arrowleft.png) center no-repeat;
+	width: 35px;
+	height: 38px;
+	z-index: 50;
+}
+#slider_0 > #sliderTool_0 > .arrowR{/*кнопка "Вправо"="Next"="Right". Автоматически позиционируется по правому краю рамки sliderTool. Картинку на фон добавлять методом background-image: url("./img/...png")*/
+	float: right;
+	display: block;
+	position: relative;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+
+	border: 1px solid transparent;
+	background-color: transparent;
+	background: url(../master/img/arrow.png) center no-repeat;
+	width: 35px;
+	height: 38px;
+	z-index: 50;
+}
+#slider_0 > #sliderTool_0 > .arrowR:hover, #slider_0 > #sliderTool_0 > .arrowL:hover{/*поведение кнопок "Влево"-"Вправо" при наведении курсора*/
+	background-color: rgba(255, 0, 0, 0.6);
+	cursor: pointer;
+}
+#slider_0 > #subslider_0{
+	display: block;
+	overflow: hidden;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	height: 100%;
+	border: 1px solid transparent;
+}
+#slider_0 > #subslider_0 > .slide_0{
+	box-sizing: border-box;
+	display: block;
+	position: relative;
+	margin: 0;
+	padding: 0;
+
+	border: 1px solid transparent;
+	height: 25rem;
+	width: 25%;
+	text-align: center;
+	color: #ff5500;
+}
+.photoWorker{
+	border: 1px solid transparent;
+	width: 100%;
+	height: 0;
+	padding-bottom: 84.5%;
+	margin-top: auto;
+	margin-left: auto;
+	margin-right: auto;
+	background-size: contain;
+	display: block;
+}
+.photoWorker:hover > .wrapperSocial{
+	display: block;
+}
+.photoWorker_bcgrnd1{/*MD. KHALIL UDDIN*/
+	background: url(../master/img/members.png) top no-repeat;
+	background-size: 100% 100%;
+}
+.photoWorker_bcgrnd2{/*RUBEL MIAH*/
+	background: url(../master/img/members2.png) top no-repeat;
+	background-size: 100% 100%;
+}
+.photoWorker_bcgrnd3{/*SHAMIM MIA*/
+	background: url(../master/img/members3.png) top no-repeat;
+	background-size: 100% 100%;
+}
+.photoWorker_bcgrnd4{/*JOHN DOE*/
+	background: url(../master/img/members4.png) top no-repeat;
+	background-size: 100% 100%;
+}
+.wrapperSocial{
+	width: 130px;
+	display: none;
+	margin-top: 13.5rem;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 4;
+	position: relative;
+}
+@media only screen and ( max-width: 1700px ) {
+	.wrapperSocial{
+		margin-top: 12.0rem;
+	}
+}
+@media only screen and ( max-width: 1500px ) {
+	.wrapperSocial{
+		margin-top: 10.5rem;
+	}
+}
+@media only screen and ( max-width: 1300px ) {
+	.wrapperSocial{
+		margin-top: 8rem;
+	}
+}
+@media only screen and ( max-width: 800px ) {
+	.wrapperSocial{
+		margin-top: 6.5rem;
+	}
+}
+@media only screen and ( max-width: 670px ) {
+	.wrapperSocial{
+		margin-top: 5.0rem;
+	}
+}
+@media only screen and ( max-width: 540px ) {
+	.wrapperSocial{
+		margin-top: 3.5rem;
+		width: 95px;
+	}
+}
+@media only screen and ( max-width: 400px ) {
+	.wrapperSocial{
+		margin-top: 2rem;
+		width: 80px;
+	}
+}
+@media only screen and ( max-width: 350px ) {
+	.wrapperSocial{
+		margin-top: .5rem;
+		width: 40px;
+	}
+}
+@media only screen and ( max-width: 250px ) {
+	.wrapperSocial{
+		margin-top: 0;
+	}
+}
+.fsocial{
+	background: url(../master/img/f1.png) center no-repeat;
+	background-size: 10px 17px;
+}
+.twsocial{
+	background: url(../master/img/tw.png) center no-repeat;
+	background-size: 17px 17px;
+}
+.gsocial{
+	background: url(../master/img/g.png) center no-repeat;
+	background-size: 17px 17px;
+}
+.lisocial{
+	background: url(../master/img/li.png) center no-repeat;
+	background-size: 17px 17px;
+}
+.socIcon{
+	width: 28px;
+	height: 28px;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 4;
+	display: inline-block;
+	position: relative;
+	background-color: transparent;
+}
+.socIcon:hover{
+	background-color: #c0301c;
+}
+@media only screen and ( max-width: 540px ) {
+	.socIcon{
+		width: 20px;
+		height: 20px;
+	}
+}
+@media only screen and ( max-width: 400px ) {
+	.socIcon{
+		float: left;
+	}
+}
+.slideCaption{
+	width: 100%;
+	margin-top: .75rem;
+	display: block;
+}
+@media only screen and ( max-width: 900px ) {
+	.slideCaption{
+		margin-top: .125rem;
+	}
+}
+.nameWorker{
+	width: 100%;
+	text-align: center;
+	padding-top: .25rem;
+	padding-bottom: .25rem;
+	display: block;
+	color: grey;
+}
+@media only screen and ( max-width: 900px ) {
+	.nameWorker{
+		font-size: .9rem;
+	}
+}
+@media only screen and ( max-width: 300px ) {
+	.nameWorker{
+		font-size: .8rem;
+	}
+}
+.jobWorker{
+	width: 100%;
+	text-align: center;
+	padding-top: .25rem;
+	padding-bottom: .25rem;
+	display: block;
+}
+@media only screen and ( max-width: 900px ) {
+	.jobWorker{
+		font-size: .85rem;
+	}
+}
+@media only screen and ( max-width: 300px ) {
+	.jobWorker{
+		font-size: .75rem;
+	}
+}
+.unvisible230{
+	display: inline;
+}
+@media only screen and ( max-width: 230px ) {
+	.unvisible230{
+		display: none;
+	}
+}
+.services{
+	display: block;
+	box-sizing: border-box;
+
+	border: 0px solid blue;
+	width: 71.3%;
+	height:100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3.0rem;
+}
+@media only screen and ( max-width: 1800px ) {
+	.services{
+		width: 90%;
+	}
+}
+@media only screen and ( max-width: 1700px ) {
+	.services{
+		width: 90%;
+	}
+}
+@media only screen and ( max-width: 1600px ) {
+	.services{
+		width: 90%;
+	}
+}
+@media only screen and ( max-width: 1500px ) {
+	.services{
+		width: 90%;
+	}
+}
+@media only screen and ( max-width: 1400px ) {
+	.services{
+		width: 100%;
+	}
+}
+@media only screen and ( max-width: 1300px ) {
+	.services{
+		width: 100%;
+	}
+}
+@media only screen and ( max-width: 1200px ) {
+	.services{
+		width: 98%;
+	}
+}
+@media only screen and ( max-width: 1100px ) {
+	.services{
+		width: 100%;
+	}
+}
+@media only screen and ( max-width: 900px ) {
+	.services{
+		width: 100%;
+	}
+}
+@media only screen and ( max-width: 800px ) {
+	.services{
+		width: 100%;
+	}
+}
+@media only screen and ( max-width: 700px ) {
+	.services{
+		width: 100%;
+	}
+}
+
+.workElem{
+	border: 0px solid red;
+	width: 361px;
+	height: 320px;
+	display: block;
+	box-sizing: border-box;
+	position: relative;
+	margin-bottom: 1rem;
+}
+@media only screen and ( max-width: 370px ) {
+	.workElem{
+		width: 100%;
+	}
+}
+@media only screen and ( max-width: 340px ) {
+	.workElem{
+		height: 294px;
+	}
+}
+@media only screen and ( max-width: 310px ) {
+	.workElem{
+		height: 268px;
+	}
+}
+@media only screen and ( max-width: 280px ) {
+	.workElem{
+		height: 242px;
+	}
+}
+@media only screen and ( max-width: 250px ) {
+	.workElem{
+		height: 216px;
+	}
+}
+@media only screen and ( max-width: 220px ) {
+	.workElem{
+		height: 190px;
+	}
+}
+.workElemL{
+	margin-left: 0;
+	margin-right: 1.9%;
+}
+@media only screen and ( max-width: 1100px ) {
+	.workElemL{
+		float: left;
+	}
+}
+@media only screen and ( max-width: 770px ) {
+	.workElemL{
+		margin: 0;
+	}
+}
+.workElemC{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -336px;	
+}
+@media only screen and ( max-width: 1100px ) {
+	.workElemC{
+		float: left;
+		margin-top: 0px;	
+		margin-right: 1.9%;
+	}
+}
+@media only screen and ( max-width: 770px ) {
+	.workElemC{
+		margin: 0;
+	}
+}
+.workElemR{
+	margin-left: auto;
+	margin-right: 0;
+	margin-top: -336px;	
+}
+@media only screen and ( max-width: 1100px ) {
+	.workElemR{
+		float: left;
+		margin-top: 0px;	
+		margin-right: 1.9%;
+	}
+}
+@media only screen and ( max-width: 770px ) {
+	.workElemR{
+		margin: 0;
+	}
+}
+.workElem:hover > .workElemSub{
+	display: block;
+}
+.workElemSub{
+	width: 100%;
+	height: calc(100% - 6.5rem);
+/*	height: 100%;*/
+	border: 0px solid green;
+	background-color: rgba(255, 0, 0, .5);
+	display: none;
+	padding-top: 6.5rem;
+}
+@media only screen and ( max-width: 340px ) {
+	.workElemSub{
+		height: calc(100% - 4.875rem);
+		padding-top: 4.875rem;
+	}
+}
+@media only screen and ( max-width: 310px ) {
+	.workElemSub{
+		height: calc(100% - 3.25rem);
+		padding-top: 3.25rem;
+	}
+}
+@media only screen and ( max-width: 220px ) {
+	.workElemSub{
+		height: calc(100% - 1.625rem);
+		padding-top: 1.625rem;
+	}
+}
+.workElem_name{
+	display: block;
+	width: 100%;
+	text-align: center;
+	font-size: 1.125rem;
+	background-color: transparent;
+	color: white;
+	cursor: default;
+}
+.workElem_description{
+	display: block;
+	width: 100%;
+	margin-top: 1rem;
+	text-align: center;
+	font-size: .75rem;
+	background-color: transparent;
+	color: white;
+	cursor: default;
+}
+.workElem_btn{
+	width: 4rem;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1.75rem;
+	text-align: center;
+	font-size: .875rem;
+	background-color: white;
+	color: #c0301c;
+	padding-left: 1.3125rem;
+	padding-right: 1.3125rem;
+	padding-top: .75rem;
+	padding-bottom: .75rem;
+	display: block;
+	text-decoration: none;
+}
+.workElem1{
+	background: url(../master/img/work_level10.png) center no-repeat;
+	background-size: 100% 100%;
+}
+.workElem2{
+	background: url(../master/img/work_level7.png) center no-repeat;
+	background-size: 100% 100%;
+}
+.workElem3{
+	background: url(../master/img/work_level8.png) center no-repeat;
+	background-size: 100% 100%;
+}
+.workElem4{
+	background: url(../master/img/work_level4.png) center no-repeat;
+	background-size: 100% 100%;
+}
+.workElem5{
+	background: url(../master/img/work_level5.png) center no-repeat;
+	background-size: 100% 100%;
+}
+.workElem6{
+	background: url(../master/img/work_level6.png) center no-repeat;
+	background-size: 100% 100%;
+}
+.workElem7{
+	background: url(../master/img/work_level.png) center no-repeat;
+	background-size: 100% 100%;
+}
+.workElem8{
+	background: url(../master/img/work_level2.png) center no-repeat;
+	background-size: 100% 100%;
+}
+.workElem9{
+	background: url(../master/img/work_level3.png) center no-repeat;
+	background-size: 100% 100%;
+}
+.wrapper_workElem{
+	border: 0px solid magenta;
+	width: 71.3%;
+	height: 995px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 4.4rem;
+	box-sizing: border-box;
+}
+@media only screen and ( max-width: 1600px ) {
+	.wrapper_workElem{
+		width: 80%;
+	}
+}
+@media only screen and ( max-width: 1400px ) {
+	.wrapper_workElem{
+		width: 90%;
+	}
+}
+@media only screen and ( max-width: 1200px ) {
+	.wrapper_workElem{
+		width: 98.5%;
+	}
+}
+@media only screen and ( max-width: 1100px ) {
+	.wrapper_workElem{
+		width: 770px;
+	}
+}
+@media only screen and ( max-width: 770px ) {/*до 370*/
+	.wrapper_workElem{
+		width: 365px;
+	}
+}
+@media only screen and ( max-width: 370px ) {
+	.wrapper_workElem{
+		width: 98.5%;
+	}
+}
+.services{
+	display: block;
+	box-sizing: border-box;
+
+	border: 0px solid blue;
+	width: 71.3%;
+	height:100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3.0rem;
+}
+@media only screen and ( max-width: 1800px ) {
+	.services{
+		width: 90%;
+	}
+}
+@media only screen and ( max-width: 1700px ) {
+	.services{
+		width: 90%;
+	}
+}
+@media only screen and ( max-width: 1600px ) {
+	.services{
+		width: 90%;
+	}
+}
+@media only screen and ( max-width: 1500px ) {
+	.services{
+		width: 90%;
+	}
+}
+@media only screen and ( max-width: 1400px ) {
+	.services{
+		width: 100%;
+	}
+}
+@media only screen and ( max-width: 1300px ) {
+	.services{
+		width: 100%;
+	}
+}
+@media only screen and ( max-width: 1200px ) {
+	.services{
+		width: 98%;
+	}
+}
+@media only screen and ( max-width: 1100px ) {
+	.services{
+		width: 100%;
+	}
+}
+@media only screen and ( max-width: 900px ) {
+	.services{
+		width: 100%;
+	}
+}
+@media only screen and ( max-width: 800px ) {
+	.services{
+		width: 100%;
+	}
+}
+@media only screen and ( max-width: 700px ) {
+	.services{
+		width: 100%;
+	}
+}
+.services2{
+	display: block;
+	box-sizing: border-box;
+
+	border: 0px solid blue;
+	width: 71.3%;
+	height:100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3.0rem;
+}
+@media only screen and ( max-width: 1800px ) {
+	.services2{
+		width: 90%;
+	}
+}
+@media only screen and ( max-width: 1700px ) {
+	.services2{
+		width: 90%;
+	}
+}
+@media only screen and ( max-width: 1600px ) {
+	.services2{
+		width: 90%;
+	}
+}
+@media only screen and ( max-width: 1500px ) {
+	.services2{
+		width: 90%;
+	}
+}
+@media only screen and ( max-width: 1400px ) {
+	.services2{
+		width: 100%;
+	}
+}
+@media only screen and ( max-width: 1300px ) {
+	.services2{
+		width: 100%;
+	}
+}
+@media only screen and ( max-width: 1200px ) {
+	.services2{
+	        margin-top: 3.0rem;
+		width: 98%;
+	}
+}
+@media only screen and ( max-width: 1100px ) {
+	.services2{
+	        margin-top: 42.0rem;
+		width: 100%;
+	}
+}
+@media only screen and ( max-width: 900px ) {
+	.services2{
+	         margin-top: 42.0rem;
+		width: 100%;
+	}
+}
+@media only screen and ( max-width: 800px ) {
+	.services2{
+	        margin-top: 42.0rem;
+		width: 100%;
+	}
+}
+@media only screen and ( max-width: 780px ) {
+	.services2{
+	         margin-top: 70.0rem;
+		width: 100%;
+	}
+}
+@media only screen and ( max-width: 770px ) {
+	.services2{
+	         margin-top: 120.0rem;
+		width: 100%;
+	}
+}
+@media only screen and ( max-width: 760px ) {
+	.services2{
+	         margin-top: 120.0rem;
+		width: 100%;
+	}
+}
+@media only screen and ( max-width: 700px ) {
+	.services2{
+	         margin-top: 120.0rem;
+		width: 100%;
+	}
+}
+@media only screen and ( max-width: 600px ) {
+	.services2{
+	         margin-top: 130.0rem;
+		width: 100%;
+	}
+}
+@media only screen and ( max-width: 300px ) {
+	.services2{
+	         margin-top: 90.0rem;
+		width: 100%;
+	}
+}
+@media only screen and ( max-width: 250px ) {
+	.services2{
+	         margin-top: 70.0rem;
+		width: 100%;
+	}
+}
+@media only screen and ( max-width: 200px ) {
+	.services2{
+	         margin-top: 50.0rem;
+		width: 100%;
+	}
+}
+.button2{
+	border: 0px solid blue;
+	width: 10em;
+	height:3em;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 6em;
+	z-index: 3;
+	display: block;
+	position: relative;
+}
+@media only screen and ( max-width: 380px ) {
+	.button2{
+	           margin-top: 3em;
+	}
+}
+@media only screen and ( max-width: 340px ) {
+	.button2{
+	           margin-top: 2em;
+	}
+}
+@media only screen and ( max-width: 205px ) {
+	.button2{
+	           margin-top: 1em;
+	}
+}
+.feat2{
+	font-size: 100%;
+	width: 10em; 
+	font-family: Montserrat Regular; 
+	font-style: normal;
+        color: #ffffff;
+        text-align: center;
+        line-height: 2em;
+
+	border: 2px solid white;
+        -webkit-border-radius: .1em;
+        -moz-border-radius: .1em;
+        border-radius: .1em; 
+	margin-top: auto;
+	margin-left: auto;
+	margin-right: auto;
+        height: 3em;
+	padding-left: 1.1em;
+	padding-right: 1.1em;
+        background:transparent;
+
+        cursor: pointer;
+        display: block;
+}
+.feat2:hover{
+	background: radial-gradient(circle, #aca8a8, #a8132a);
+}
+.unvisible350{
+	display: none;
+}
+@media only screen and ( max-width: 350px ) {
+	.unvisible350{
+	           display: inline;
+	}
+}
+.parralax{
+	border: 1px solid transparent;
+	width: 100%;
+	height: 23em;
+	margin-top:auto;
+	z-index: 3;
+	display: block;
+	position: relative;
+	background: url(../master/img/parallax.png) no-repeat;
+	background-size: 100% 100%;
+}
+@media only screen and ( max-width: 1620px ) {
+	.parralax{
+		width: 100%;
+	}
+}
+.text{
+       
+	border: 0px solid red;
+	width: 25em;
+	height:5em;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5em;
+	z-index: 3;
+	display: block;
+	position: relative;
+	
+}
+
+@media only screen and ( max-width: 450px ) {
+	.text{
+		width: 98%;
+	}
+}
+@media only screen and ( max-width: 370px ) {
+	.text{
+		width: 98%;
+		height:7em;
+	}
+}
+@media only screen and ( max-width: 340px ) {
+	.text{
+		width: 98%;
+		height:9em;
+	}
+}
+@media only screen and ( max-width: 200px ) {
+	.text{
+		width: 98%;
+		height:12em;
+	}
+}
+.text1{
+	font-family: Roboto Slab regular; 
+        text-decoration: none;
+	text-align: center;
+     	font-size: 1.5em; 
+	line-height: 1.5em;
+	color:#ffffff;
+	font-weight: bold;
+	 z-index: 3;
+	display: block;
+	position: relative;
+}
+.services{
+	display: block;
+	box-sizing: border-box;
+
+	border: 0px solid blue;
+	width: 71.3%;
+	height:100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3.0rem;
+}
+@media only screen and ( max-width: 1800px ) {
+	.services{
+		width: 90%;
+	}
+}
+@media only screen and ( max-width: 1400px ) {
+	.services{
+		width: 100%;
+	}
+}
+@media only screen and ( max-width: 1200px ) {
+	.services{
+		width: 98%;
+	}
+}
+@media only screen and ( max-width: 1100px ) {
+	.services{
+		width: 100%;
+	}
+}
+.serv2{
+       
+	border: 0px solid grey;
+	width: 15em;
+	height:4em;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	z-index: 3;
+	display: block;
+	position: relative;
+}
+@media only screen and ( max-width: 260px ) {
+	.serv2{
+		width: 10em;
+		height:5em;
+	}
+}
+.serv3{
+	font-family: Montserrat regular; 
+        text-decoration: none;
+	text-align: center;
+     	font-size: 1.3em; 
+	line-height: 1.5em;
+	color:#555555;
+	font-weight: bold;
+	z-index: 3;
+	display: block;
+	position: relative;
+}
+.we{
+       
+	border: 0px solid red;
+	width: 28em;
+	height:3em;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1em;
+	
+}
+@media only screen and ( max-width: 470px ) {
+	.we{
+		width: 18em;
+		height:3em;
+	}
+}
+@media only screen and ( max-width: 300px ) {
+	.we{
+		width: 13em;
+		height:5em;
+	}
+}
+@media only screen and ( max-width: 212px ) {
+	.we{
+		width: 10em;
+		height:5em;
+	}
+}
+.we1{
+	font-family: Roboto Slab Regular; 
+        text-decoration: none;
+	text-align: center;
+     	font-size: 1.1em; 
+	line-height: 1.5em;
+	color:#555555;
+
+}
+.services{
+	display: block;
+	box-sizing: border-box;
+
+	border: 0px solid blue;
+	width: 100%;
+	height:100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3.0rem;
+}
+@media only screen and ( max-width: 1900px ) {
+	.services{
+		width: 95%;
+	}
+}
+@media only screen and ( max-width: 1800px ) {
+	.services{
+		width: 95%;
+	}
+}
+@media only screen and ( max-width: 1700px ) {
+	.services{
+		width: 95%;
+	}
+}
+@media only screen and ( max-width: 1600px ) {
+	.services{
+		width: 95%;
+	}
+}
+@media only screen and ( max-width: 1500px ) {
+	.services{
+		width: 95%;
+	}
+}
+@media only screen and ( max-width: 1400px ) {
+	.services{
+		width: 100%;
+	}
+}
+@media only screen and ( max-width: 1300px ) {
+	.services{
+		width: 100%;
+	}
+}
+@media only screen and ( max-width: 1200px ) {
+	.services{
+		width: 100%;
+	}
+}
+@media only screen and ( max-width: 1100px ) {
+	.services{
+		width: 100%;
+	}
+}
+@media only screen and ( max-width: 900px ) {
+	.services{
+		width: 100%;
+	}
+}
+@media only screen and ( max-width: 800px ) {
+	.services{
+		width: 100%;
+	}
+}
+@media only screen and ( max-width: 700px ) {
+	.services{
+		width: 100%;
+	}
+}
+@media only screen and ( max-width: 470px ) {
+	.services{
+		width: 100%;
+	}
+}
+
+.blog1{
+	border: 0px solid blue;
+	width: 460px;
+	height: 322px;
+	margin-left: 0rem;
+        background: url(../master/img/blog.png) center no-repeat;
+        box-sizing: border-box;
+
+	background-size: 100% 100%;
+	margin-top: auto;
+	z-index: 1;
+	display: block;
+	position: relative;
+}
+@media only screen and ( max-width: 1500px ) {
+	.blog1{
+	        margin-top:5rem;
+	      	margin-left: 35rem;
+	      	
+	}
+}
+
+@media only screen and ( max-width: 1400px ) {
+	.blog1{
+	        margin-top:5rem;
+	      	margin-left: 32rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 1300px ) {
+	.blog1{
+	        margin-top:5rem;
+	      	margin-left: 25rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 1200px ) {
+	.blog1{
+	        margin-top:5rem;
+	      	margin-left: 25rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 1100px ) {
+	.blog1{
+	        margin-top:5rem;
+	      	margin-left: 22rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 1000px ) {
+	.blog1{
+	        margin-top:5rem;
+	      	margin-left: 20rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 930px ) {
+	.blog1{
+	        margin-top:5rem;
+	      	margin-left: 15rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 900px ) {
+	.blog1{
+	        margin-top:5rem;
+	      	margin-left: 14rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 870px ) {
+	.blog1{
+	        margin-top:5rem;
+	      	margin-left: 13rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 850px ) {
+	.blog1{
+	        margin-top:5rem;
+	      	margin-left: 12rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 830px ) {
+	.blog1{
+	        margin-top:5rem;
+	      	margin-left: 7rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 670px ) {
+	.blog1{
+	        margin-top:5rem;
+	      	margin-left: 4rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 590px ) {
+	.blog1{
+	        margin-top:5rem;
+	       margin-left: 2rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 504px ) {
+	.blog1{
+	       width: 20em;
+	       height: 15em;
+	      	
+	}
+}
+@media only screen and ( max-width: 500px ) {
+	.blog1{
+	       width: 20em;
+	       height: 15em;
+	       margin-left: 0rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 400px ) {
+	.blog1{
+	       width: 20em;
+	       height: 15em;
+	      margin-left: 0rem;
+	}
+}
+@media only screen and ( max-width: 440px ) {
+	.blog1{
+	       width: 20em;
+	       height: 15em;
+	      margin-left: 0rem;
+	}
+}
+@media only screen and ( max-width: 350px ) {
+	.blog1{
+	       width: 15em;
+	       height: 13em;
+	      	
+	}
+}
+@media only screen and ( max-width: 270px ) {
+	.blog1{
+	       width: 10em;
+	       height: 11em;
+	      	
+	}
+}
+.blog111{
+	border: 0px solid blue;
+	width: 460px;
+	height: 322px;
+	margin-left:0rem;
+
+        background: url(../master/img/blog2.png) center no-repeat;
+        box-sizing: border-box;
+	background-size: contain;
+	margin-top: 7rem;
+	z-index: 1;
+	display: block;
+	position: relative;
+}
+.blog2{/*Размеры: width автоматически подгоняется под текст, height - однострочный. обход глюка невозможности работы аницации с градиентами*/
+	border: 0px solid red;
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: relative;
+	z-index: 3;
+	box-sizing: border-box;
+}
+.blog2:after{
+	content: '';
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	opacity: 0;
+	background: radial-gradient(circle, #aca8a8, #a8132a);
+	box-shadow: 0 0 3px 3px red;
+
+	transition: all 0.2s ease-in-out 0.2s;
+}
+.blog2:hover:after{
+	opacity: .75;
+}
+.blog1:hover  {
+	display: block;
+	border: 1px solid red;
+	width: 460px;
+	height: 322px;
+	margin-left: 0rem;
+        background: url(../master/img/blog2.png) center no-repeat;
+        box-sizing: border-box;
+		background-size: 100% 100%;
+	margin-top:auto;
+	z-index: 1;
+	display: block;
+	position: relative;
+}
+@media only screen and ( max-width: 1500px ) {
+	.blog1:hover{
+	        margin-top:5rem;
+	      	margin-left: 35rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 1400px ) {
+	.blog1:hover{
+	        margin-top:5rem;
+	      	margin-left: 32rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 1300px ) {
+	.blog1:hover{
+	        margin-top:5rem;
+	      	margin-left: 25rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 1200px ) {
+	.blog1:hover{
+	        margin-top:5rem;
+	      	margin-left: 25rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 1100px ) {
+	.blog1:hover{
+	        margin-top:5rem;
+	      	margin-left: 22rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 1000px ) {
+	.blog1:hover{
+	        margin-top:5rem;
+	      	margin-left: 20rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 930px ) {
+	.blog1:hover{
+	        margin-top:5rem;
+	      	margin-left: 15rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 900px ) {
+	.blog1:hover{
+	        margin-top:5rem;
+	      	margin-left: 14rem;
+	      	
+	}
+}
+
+@media only screen and ( max-width: 870px ) {
+	.blog1:hover{
+	        margin-top:5rem;
+	      	margin-left: 13rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 850px ) {
+	.blog1:hover{
+	        margin-top:5rem;
+	      	margin-left: 12rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 830px ) {
+	.blog1:hover{
+	        margin-top:5rem;
+	      	margin-left: 7rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 670px ) {
+	.blog1:hover{
+	        margin-top:5rem;
+	      	margin-left: 4rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 590px ) {
+	.blog1:hover{
+	        margin-top:5rem;
+	       margin-left: 2rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 500px ) {
+	.blog1:hover{
+	       width: 20em;
+	       height: 15em;
+	      	
+	}
+}
+@media only screen and ( max-width: 440px ) {
+	.blog1:hover{
+	       width: 20em;
+	       height: 15em;
+	      margin-left: 0rem;
+	}
+}
+@media only screen and ( max-width: 400px ) {
+	.blog1:hover{
+	       width: 20em;
+	       height: 15em;
+	      margin-left: 0rem;
+	}
+}
+@media only screen and ( max-width: 350px ) {
+	.blog1:hover{
+	       width: 15em;
+	       height: 13em;
+	      	
+	}
+}
+@media only screen and ( max-width: 270px ) {
+	.blog1:hover{
+	       width: 10em;
+	       height: 11em;
+	      	
+	}
+}
+.blog111:hover  {
+	display: block;
+	border: 0px solid red;
+	width: 460px;
+	height: 322px;
+	margin-left:0rem;
+        background: url(../master/img/blog.png) center no-repeat;
+        box-sizing: border-box;
+	background-size: contain;
+	margin-top: 6rem;
+	z-index: 1;
+	display: block;
+	position: relative;
+}
+
+	
+.action{
+	border: 0px solid blue;
+	width: 50rem;
+	height:19rem;
+	margin-left: 33rem;
+	margin-right: auto;
+	margin-top:-20rem;
+	z-index: 3;
+	
+	display: block;
+	position: relative;
+	
+	
+}
+@media only screen and ( max-width: 1500px ) {
+	.action{
+	        margin-top:5rem;
+	      	margin-left: 25rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 1400px ) {
+	.action{
+	        margin-top:5rem;
+	      	margin-left: 20rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 1300px ) {
+	.action{
+	        margin-top:5rem;
+	      	margin-left: 15rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 1200px ) {
+	.action{
+	        margin-top:5rem;
+	      	margin-left: 13rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 1100px ) {
+	.action{
+	        margin-top:5rem;
+	      	margin-left: 10rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 1000px ) {
+	.action{
+	        margin-top:5rem;
+	      	margin-left: 7rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 930px ) {
+	.action{
+	        margin-top:5rem;
+	      	margin-left: 5rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 900px ) {
+	.action{
+	        margin-top:5rem;
+	      	margin-left: 3rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 870px ) {
+	.action{
+	        margin-top:5rem;
+	      	margin-left: 2rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 850px ) {
+	.action{
+	        margin-top:5rem;
+	      	margin-left: 1rem;
+	      	
+	}
+}
+
+@media only screen and ( max-width: 830px ) {
+	.action{
+	        margin-top:5rem;
+	      	margin-left: 1rem;
+	      	width: 40rem;
+	        height:19rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 670px ) {
+	.action{
+	        margin-top:5rem;
+	      	margin-left: 1rem;
+	      	width: 35rem;
+	        height:21rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 590px ) {
+	.action{
+	        margin-top:5rem;
+	      	margin-left: 1rem;
+	      	width: 30rem;
+	        height:23rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 505px ) {
+	.action{
+	        margin-top:5rem;
+	      	margin-left: 1rem;
+	      	width: 25rem;
+	        height:26rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 430px ) {
+	.action{
+	        margin-top:5rem;
+	      	margin-left: 1rem;
+	      	width: 20rem;
+	        height:34rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 440px ) {
+	.action{
+	        margin-top:5rem;
+	      	margin-left: 1rem;
+	      	width: 20rem;
+	        height:38rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 345px ) {
+	.action{
+	        margin-top:5rem;
+	      	margin-left: 1rem;
+	      	width: 16rem;
+	        height:44rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 350px ) {
+	.action{
+	        margin-top:5rem;
+	      	margin-left: 1rem;
+	      	width: 16rem;
+	        height:45rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 280px ) {
+	.action{
+	        margin-top:5rem;
+	      	margin-left: 1rem;
+	      	width: 10rem;
+	        height:60rem;
+	      	
+	}
+}
+.acttwo{
+	border: 0px solid blue;
+	width: 50rem;
+	height:19rem;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:-20rem;
+	z-index: 3;
+	
+	display: block;
+	position: relative;
+	
+	
+}
+.action2{
+	border: 0px solid #555555;
+	width: 5rem;
+	height:5rem;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:auto;
+	z-index: 3;
+	float:left;
+	display: block;
+	position: relative;
+	
+	
+}
+
+.action3{
+	font-family: Montserrat bold; 
+        text-decoration: none;
+	text-align: center;
+	margin-top:1.2rem;
+     	font-size: 1.8em; 
+	line-height: 1.0em;
+	color:#777777;
+	font-weight: bold;
+	z-index: 3;
+	display: block;
+	position: relative;
+}
+.action4{
+	font-family: Montserrat bold; 
+        text-decoration: none;
+	text-align: center;
+	margin-top:auto;
+     	font-size: 0.90em; 
+	line-height: 1.6em;
+	color:#777777;
+	font-weight: bold;
+	z-index: 3;
+	display: block;
+	position: relative;
+}
+.action2:after{
+	content: '';
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	opacity: 0;
+	background: radial-gradient(circle, #aca8a8, #a8132a);
+	box-shadow: 0 0 3px 3px #555555;
+
+	transition: all 0.2s ease-in-out 0.2s;
+}
+.action2:hover:after{
+	opacity: .75;
+}
+.action2:hover  {
+	display: block;
+}
+.action5{
+       
+	border: 0px solid magenta;
+	width: 28em;
+	height:4em;
+	margin-left: 6.25rem;
+	margin-right: auto;
+	margin-top: -4rem;
+	display: block;
+	position: relative;
+	
+}
+@media only screen and ( max-width: 610px ) {
+	.action5{
+	        
+	      	width: 20em;
+	        height:5em;
+	      	
+	}
+}
+@media only screen and ( max-width: 520px ) {
+	.action5{
+	        
+	      	width: 15em;
+	        height:5em;
+	      	
+	}
+}
+@media only screen and ( max-width: 440px ) {
+	.action5{
+	        
+	      	width: 10em;
+	        height:8em;
+	      	
+	}
+}
+@media only screen and ( max-width: 350px ) {
+	.action5{
+	        
+	      	width: 6em;
+	        height:13em;
+	      	
+	}
+}
+@media only screen and ( max-width: 280px ) {
+	.action5{
+	        margin-top:2em;
+	        margin-left:0em;
+	      	width: 7em;
+	        height:10em;
+	      	
+	}
+}
+.action6{
+	font-family: Montserrat Regular; 
+        text-decoration: none;
+	text-align: center;
+     	font-size: 1.1em;
+	line-height: 1.5em;
+	font-weight: bold;
+	color: #c0301c;
+}
+.action7{
+	font-family: Roboto Slab regular; 
+        text-decoration: none;
+	text-align: center;
+     	font-size: 1.0em; 
+	line-height: 1.5em;
+	
+	color: #c0301c;
+}
+.action8{
+	font-family: Roboto Slab regular; 
+        text-decoration: none;
+	text-align: center;
+     	font-size: 1.0em; 
+	line-height: 1.5em;
+	
+	color:#777777;
+
+}
+.action9{
+       
+	border: 0px solid blue;
+	width:100%;
+	height:8rem;
+	margin-left:-0.10rem;
+
+	margin-right: auto;
+	margin-top: 7rem;
+	display: block;
+	position: relative;
+	
+}
+@media only screen and ( max-width: 830px ) {
+	.action9{
+	        
+	      	width: 40rem;
+	        height:8rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 670px ) {
+	.action9{
+	        
+	      	width: 35rem;
+	        height:10rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 590px ) {
+	.action9{
+	        
+	      	width: 30rem;
+	        height:12rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 505px ) {
+	.action9{
+	        
+	      	width: 25rem;
+	        height:14rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 430px ) {
+	.action9{
+	        margin-top: 10rem;
+	      	width: 20rem;
+	        height:22rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 430px ) {
+	.action9{
+	        margin-top: 10rem;
+	      	width: 20rem;
+	        height:22rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 440px ) {
+	.action9{
+	        margin-top: 10rem;
+	      	width: 15rem;
+	        height:28rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 350px ) {
+	.action9{
+	        margin-top: 14rem;
+	      	width: 15rem;
+	        height:28rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 280px ) {
+	.action9{
+	        margin-top: 20rem;
+	      	width: 10rem;
+	        height:39rem;
+	      	
+	}
+}
+.action10{
+        font-family: Roboto Slab regular; 
+        text-decoration: none;
+	text-align: center;
+     	font-size: 1.1em; 
+	line-height: 1.5em;
+
+	color:#777777;
+
+       
+	
+}
+.action11{
+       
+	border: 0px solid red;
+	width: 7rem;
+	height:1.5rem;
+	margin-left:2.1em;
+	
+        
+	margin-right: auto;
+	margin-top: 2rem;
+	display: block;
+	position: relative;
+	
+}
+.action12{
+        font-family: Roboto Slab bold; 
+        text-decoration: none;
+	text-align: center;
+     	font-size: 1.0em; 
+	line-height: 1.5em;
+        font-weight: bold;
+	color:#c0301c;
+	display: block;
+
+       
+	
+}
+.action13{
+        font-family: Roboto Slab bold; 
+        text-decoration: none;
+	text-align: center;
+     	font-size: 1em; 
+	line-height: 1.5em;
+        font-weight: bold;
+	color: #8c8c8c;
+	display: block;
+}
+.acttwo{
+	border: 1px solid red;
+	width: 50rem;
+	height:19rem;
+	margin-left: auto;
+	margin-right: 2rem;
+	margin-top:-20rem;
+	z-index: 3;
+	
+	display: block;
+	position: relative;
+	
+	
+}
+.services3{
+	display: block;
+	box-sizing: border-box;
+       
+	border: 1px solid transparent;
+	width: 100%;
+	height:100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 4.0rem;
+}
+@media only screen and ( max-width: 1900px ) {
+	.services3{
+		width: 95%;
+	}
+}
+@media only screen and ( max-width: 1800px ) {
+	.services3{
+		width: 95%;
+	}
+}
+@media only screen and ( max-width: 1700px ) {
+	.services3{
+		width: 95%;
+	}
+}
+@media only screen and ( max-width: 1600px ) {
+	.services3{
+		width: 95%;
+	}
+}
+@media only screen and ( max-width: 1500px ) {
+	.services3{
+		width: 95%;
+	}
+}
+@media only screen and ( max-width: 1400px ) {
+	.services3{
+		width: 100%;
+	}
+}
+@media only screen and ( max-width: 1300px ) {
+	.services3{
+		width: 100%;
+	}
+}
+@media only screen and ( max-width: 1200px ) {
+	.services3{
+		width: 100%;
+	}
+}
+@media only screen and ( max-width: 1100px ) {
+	.services3{
+		width: 100%;
+	}
+}
+@media only screen and ( max-width: 900px ) {
+	.services3{
+		width: 100%;
+	}
+}
+@media only screen and ( max-width: 800px ) {
+	.services3{
+		width: 100%;
+	}
+}
+@media only screen and ( max-width: 700px ) {
+	.services{
+		width: 100%;
+	}
+}
+@media only screen and ( max-width: 470px ) {
+	.services3{
+		width: 100%;
+	}
+}
+
+.blog1{
+	border: 0px solid green;
+	width: 460px;
+	height: 322px;
+	margin-left: 0rem;
+        background: url(../master/img/blog2.png) center no-repeat;
+        box-sizing: border-box;
+
+	background-size: 100% 100%;
+	margin-top: auto;
+	z-index: 1;
+	display: block;
+	position: relative;
+}
+@media only screen and ( max-width: 1500px ) {
+	.blog1{
+	        margin-top:5rem;
+	      	margin-left: 35rem;
+	      	
+	}
+}
+
+@media only screen and ( max-width: 1400px ) {
+	.blog1{
+	        margin-top:5rem;
+	      	margin-left: 32rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 1300px ) {
+	.blog1{
+	        margin-top:5rem;
+	      	margin-left: 25rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 1200px ) {
+	.blog1{
+	        margin-top:5rem;
+	      	margin-left: 25rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 1100px ) {
+	.blog1{
+	        margin-top:5rem;
+	      	margin-left: 22rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 1000px ) {
+	.blog1{
+	        margin-top:5rem;
+	      	margin-left: 20rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 930px ) {
+	.blog1{
+	        margin-top:5rem;
+	      	margin-left: 15rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 900px ) {
+	.blog1{
+	        margin-top:5rem;
+	      	margin-left: 14rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 870px ) {
+	.blog1{
+	        margin-top:5rem;
+	      	margin-left: 13rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 850px ) {
+	.blog1{
+	        margin-top:5rem;
+	      	margin-left: 12rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 830px ) {
+	.blog1{
+	        margin-top:5rem;
+	      	margin-left: 7rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 670px ) {
+	.blog1{
+	        margin-top:5rem;
+	      	margin-left: 4rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 590px ) {
+	.blog1{
+	        margin-top:5rem;
+	       margin-left: 2rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 504px ) {
+	.blog1{
+	       width: 20em;
+	       height: 15em;
+	      	
+	}
+}
+@media only screen and ( max-width: 500px ) {
+	.blog1{
+	       width: 20em;
+	       height: 15em;
+	       margin-left: 0rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 400px ) {
+	.blog1{
+	       width: 20em;
+	       height: 15em;
+	      margin-left: 0rem;
+	}
+}
+@media only screen and ( max-width: 440px ) {
+	.blog1{
+	       width: 20em;
+	       height: 15em;
+	      margin-left: 0rem;
+	}
+}
+@media only screen and ( max-width: 350px ) {
+	.blog1{
+	       width: 15em;
+	       height: 13em;
+	      	
+	}
+}
+@media only screen and ( max-width: 270px ) {
+	.blog1{
+	       width: 10em;
+	       height: 11em;
+	      	
+	}
+}
+.blog111{
+	border: 0px solid blue;
+	width: 460px;
+	height: 322px;
+	margin-left:0rem;
+
+        background: url(../master/img/blog2.png) center no-repeat;
+        box-sizing: border-box;
+	background-size: contain;
+	margin-top: 7rem;
+	z-index: 1;
+	display: block;
+	position: relative;
+}
+.blog2{/*Размеры: width автоматически подгоняется под текст, height - однострочный. обход глюка невозможности работы аницации с градиентами*/
+	border: 0px solid red;
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: relative;
+	z-index: 3;
+	box-sizing: border-box;
+}
+.blog2:after{
+	content: '';
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	opacity: 0;
+	background: radial-gradient(circle, #aca8a8, #a8132a);
+	box-shadow: 0 0 3px 3px red;
+
+	transition: all 0.2s ease-in-out 0.2s;
+}
+.blog2:hover:after{
+	opacity: .75;
+}
+.blog1:hover  {
+
+	border: 1px solid red;
+	width: 460px;
+	height: 322px;
+	margin-left: 0rem;
+        background: url(../master/img/blog.png) center no-repeat;
+        box-sizing: border-box;
+	background-size: 100% 100%;
+	margin-top:auto;
+	z-index: 1;
+	display: block;
+	position: relative;
+}
+@media only screen and ( max-width: 1500px ) {
+	.blog1:hover{
+	        margin-top:5rem;
+	      	margin-left: 35rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 1400px ) {
+	.blog1:hover{
+	        margin-top:5rem;
+	      	margin-left: 32rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 1300px ) {
+	.blog1:hover{
+	        margin-top:5rem;
+	      	margin-left: 25rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 1200px ) {
+	.blog1:hover{
+	        margin-top:5rem;
+	      	margin-left: 25rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 1100px ) {
+	.blog1:hover{
+	        margin-top:5rem;
+	      	margin-left: 22rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 1000px ) {
+	.blog1:hover{
+	        margin-top:5rem;
+	      	margin-left: 20rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 930px ) {
+	.blog1:hover{
+	        margin-top:5rem;
+	      	margin-left: 15rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 900px ) {
+	.blog1:hover{
+	        margin-top:5rem;
+	      	margin-left: 14rem;
+	      	
+	}
+}
+
+@media only screen and ( max-width: 870px ) {
+	.blog1:hover{
+	        margin-top:5rem;
+	      	margin-left: 13rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 850px ) {
+	.blog1:hover{
+	        margin-top:5rem;
+	      	margin-left: 12rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 830px ) {
+	.blog1:hover{
+	        margin-top:5rem;
+	      	margin-left: 7rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 670px ) {
+	.blog1:hover{
+	        margin-top:5rem;
+	      	margin-left: 4rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 590px ) {
+	.blog1:hover{
+	        margin-top:5rem;
+	       margin-left: 2rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 500px ) {
+	.blog1:hover{
+	       width: 20em;
+	       height: 15em;
+	      	
+	}
+}
+@media only screen and ( max-width: 440px ) {
+	.blog1:hover{
+	       width: 20em;
+	       height: 15em;
+	      margin-left: 0rem;
+	}
+}
+@media only screen and ( max-width: 400px ) {
+	.blog1:hover{
+	       width: 20em;
+	       height: 15em;
+	      margin-left: 0rem;
+	}
+}
+@media only screen and ( max-width: 350px ) {
+	.blog1:hover{
+	       width: 15em;
+	       height: 13em;
+	      	
+	}
+}
+@media only screen and ( max-width: 270px ) {
+	.blog1:hover{
+	       width: 10em;
+	       height: 11em;
+	      	
+	}
+}
+.blog111:hover  {
+	display: block;
+	border: 1px solid red;
+	width: 460px;
+	height: 322px;
+	margin-left:0rem;
+        background: url(../master/img/blog.png) center no-repeat;
+        box-sizing: border-box;
+	background-size: contain;
+	margin-top: 6rem;
+	z-index: 1;
+	display: block;
+	position: relative;
+}
+
+	
+.action{
+	border: 1px solid grey;
+	width: 40rem;
+	height:19rem;
+	margin-left: 33rem;
+	margin-right: auto;
+	margin-top:-20rem;
+	z-index: 3;
+	
+	display: block;
+	position: relative;
+	
+	
+}
+@media only screen and ( max-width: 1500px ) {
+	.action{
+	        margin-top:5rem;
+	      	margin-left: 25rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 1400px ) {
+	.action{
+	        margin-top:5rem;
+	      	margin-left: 20rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 1300px ) {
+	.action{
+	        margin-top:5rem;
+	      	margin-left: 15rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 1200px ) {
+	.action{
+	        margin-top:5rem;
+	      	margin-left: 13rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 1100px ) {
+	.action{
+	        margin-top:5rem;
+	      	margin-left: 10rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 1000px ) {
+	.action{
+	        margin-top:5rem;
+	      	margin-left: 7rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 930px ) {
+	.action{
+	        margin-top:5rem;
+	      	margin-left: 5rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 900px ) {
+	.action{
+	        margin-top:5rem;
+	      	margin-left: 3rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 870px ) {
+	.action{
+	        margin-top:5rem;
+	      	margin-left: 2rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 850px ) {
+	.action{
+	        margin-top:5rem;
+	      	margin-left: 1rem;
+	      	
+	}
+}
+
+@media only screen and ( max-width: 830px ) {
+	.action{
+	        margin-top:5rem;
+	      	margin-left: 1rem;
+	      	width: 40rem;
+	        height:19rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 670px ) {
+	.action{
+	        margin-top:5rem;
+	      	margin-left: 1rem;
+	      	width: 35rem;
+	        height:21rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 590px ) {
+	.action{
+	        margin-top:5rem;
+	      	margin-left: 1rem;
+	      	width: 30rem;
+	        height:23rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 505px ) {
+	.action{
+	        margin-top:5rem;
+	      	margin-left: 1rem;
+	      	width: 25rem;
+	        height:26rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 430px ) {
+	.action{
+	        margin-top:5rem;
+	      	margin-left: 1rem;
+	      	width: 20rem;
+	        height:34rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 440px ) {
+	.action{
+	        margin-top:5rem;
+	      	margin-left: 1rem;
+	      	width: 20rem;
+	        height:38rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 345px ) {
+	.action{
+	        margin-top:5rem;
+	      	margin-left: 1rem;
+	      	width: 16rem;
+	        height:44rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 350px ) {
+	.action{
+	        margin-top:5rem;
+	      	margin-left: 1rem;
+	      	width: 16rem;
+	        height:45rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 280px ) {
+	.action{
+	        margin-top:5rem;
+	      	margin-left: 1rem;
+	      	width: 10rem;
+	        height:60rem;
+	      	
+	}
+}
+.acttwo{
+	border: 0px solid blue;
+	width: 50rem;
+	height:19rem;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:-20rem;
+	z-index: 3;
+	
+	display: block;
+	position: relative;
+	
+	
+}
+.action2{
+	border: 2px solid #555555;
+	width: 5rem;
+	height:5rem;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:auto;
+	z-index: 3;
+	float:left;
+	display: block;
+	position: relative;
+	
+	
+}
+
+.action3{
+	font-family: Montserrat bold; 
+        text-decoration: none;
+	text-align: center;
+	margin-top:1.2rem;
+     	font-size: 1.8em; 
+	line-height: 1.0em;
+	color:#777777;
+	font-weight: bold;
+	z-index: 3;
+	display: block;
+	position: relative;
+}
+.action4{
+	font-family: Montserrat bold; 
+        text-decoration: none;
+	text-align: center;
+	margin-top:auto;
+     	font-size: 0.90em; 
+	line-height: 1.6em;
+	color:#777777;
+	font-weight: bold;
+	z-index: 3;
+	display: block;
+	position: relative;
+}
+.action2:after{
+	content: '';
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	opacity: 0;
+	background: radial-gradient(circle, #aca8a8, #a8132a);
+	box-shadow: 0 0 3px 3px #555555;
+
+	transition: all 0.2s ease-in-out 0.2s;
+}
+.action2:hover:after{
+	opacity: .75;
+}
+.action2:hover  {
+	display: block;
+}
+.action5{
+       
+	border: 0px solid grey;
+	width: 28em;
+	height:4em;
+	margin-left: 6.25rem;
+	margin-right: auto;
+	margin-top: -4rem;
+	display: block;
+	position: relative;
+	
+}
+@media only screen and ( max-width: 610px ) {
+	.action5{
+	        
+	      	width: 20em;
+	        height:5em;
+	      	
+	}
+}
+@media only screen and ( max-width: 520px ) {
+	.action5{
+	        
+	      	width: 15em;
+	        height:5em;
+	      	
+	}
+}
+@media only screen and ( max-width: 440px ) {
+	.action5{
+	        
+	      	width: 10em;
+	        height:8em;
+	      	
+	}
+}
+@media only screen and ( max-width: 350px ) {
+	.action5{
+	        
+	      	width: 6em;
+	        height:13em;
+	      	
+	}
+}
+@media only screen and ( max-width: 280px ) {
+	.action5{
+	        margin-top:2em;
+	        margin-left:0em;
+	      	width: 7em;
+	        height:10em;
+	      	
+	}
+}
+.action6{
+	font-family: Montserrat Regular; 
+        text-decoration: none;
+	text-align: center;
+     	font-size: 1.1em;
+	line-height: 1.5em;
+	font-weight: bold;
+	color: #c0301c;
+}
+.action7{
+	font-family: Roboto Slab regular; 
+        text-decoration: none;
+	text-align: center;
+     	font-size: 1.0em; 
+	line-height: 1.5em;
+	
+	color: #c0301c;
+}
+.action8{
+	font-family: Roboto Slab regular; 
+        text-decoration: none;
+	text-align: center;
+     	font-size: 1.0em; 
+	line-height: 1.5em;
+	
+	color:#777777;
+
+}
+.action9{
+       
+	border: 0px solid blue;
+	width: 100%;
+	height:8rem;
+	margin-left:-0.10rem;
+
+	margin-right: auto;
+	margin-top: 7rem;
+	display: block;
+	position: relative;
+	
+}
+@media only screen and ( max-width: 830px ) {
+	.action9{
+	        
+	      	width: 40rem;
+	        height:8rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 670px ) {
+	.action9{
+	        
+	      	width: 35rem;
+	        height:10rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 590px ) {
+	.action9{
+	        
+	      	width: 30rem;
+	        height:12rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 505px ) {
+	.action9{
+	        
+	      	width: 25rem;
+	        height:14rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 430px ) {
+	.action9{
+	        margin-top: 10rem;
+	      	width: 20rem;
+	        height:22rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 430px ) {
+	.action9{
+	        margin-top: 10rem;
+	      	width: 20rem;
+	        height:22rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 440px ) {
+	.action9{
+	        margin-top: 10rem;
+	      	width: 15rem;
+	        height:28rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 350px ) {
+	.action9{
+	        margin-top: 14rem;
+	      	width: 15rem;
+	        height:28rem;
+	      	
+	}
+}
+@media only screen and ( max-width: 280px ) {
+	.action9{
+	        margin-top: 20rem;
+	      	width: 10rem;
+	        height:39rem;
+	      	
+	}
+}
+.action10{
+        font-family: Roboto Slab regular;
+        margin-left:2.0em;
+        margin-right:auto;
+        text-decoration: none;
+	text-align:justify;
+     	font-size: 1.1em; 
+	line-height: 1.5em;
+
+	color:#777777;
+
+       
+	
+}
+.action11{
+       
+	border: 1px solid grey;
+	width: 7rem;
+	height:1.5rem;
+	margin-left:2.1em;
+	
+        
+	margin-right: auto;
+	margin-top: auto;
+	display: inline-block;
+	position: relative;
+	
+}
+.action12{
+        font-family: Roboto Slab bold; 
+        text-decoration: none;
+	text-align: center;
+     	font-size: 0.80em; 
+     	
+	line-height: 1.5em;
+        font-weight: bold;
+	color:#777777;
+	display: block;
+
+       
+	
+}
+.action12:after{
+	content: '';
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	opacity: 0;
+	background: radial-gradient(circle, #aca8a8, #a8132a);
+	box-shadow: 0 0 3px 3px #555555;
+
+	transition: all 0.2s ease-in-out 0.2s;
+}
+.action12:hover:after{
+	opacity: .75;
+}
+.action12:hover  {
+	display: block;
+}
+.action13{
+        font-family: Roboto Slab bold; 
+        text-decoration: none;
+	text-align: center;
+     	font-size: 1em; 
+	line-height: 1.5em;
+        font-weight: bold;
+	color: #8c8c8c;
+	display: block;
+}
+.acttwo{
+	border: 0px solid red;
+	width: 50rem;
+	height:19rem;
+	margin-left: auto;
+	margin-right: 2rem;
+	margin-top:-20rem;
+	z-index: 3;
+	
+	display: block;
+	position: relative;
+	
+	
+}
+
+.Hvaing{
+	border: 0px solid red;
+	width: 53rem;
+	height:12rem;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:5rem;
+	z-index: 3;
+	
+	display: block;
+	position: relative;
+	
+	
+}
+@media only screen and ( max-width: 860px ) {
+	.Hvaing{
+		width: 48rem;
+		height:12rem;
+	}
+}
+@media only screen and ( max-width: 800px ) {
+	.Hvaing{
+		width: 40rem;
+		height:12rem;
+	}
+}
+@media only screen and ( max-width: 700px ) {
+	.Hvaing{
+		width: 35rem;
+		height:14rem;
+	}
+}
+@media only screen and ( max-width: 600px ) {
+	.Hvaing{
+		width: 30rem;
+		height:14rem;
+	}
+}
+@media only screen and ( max-width: 500px ) {
+	.Hvaing{
+	        margin-top:2rem;
+		width: 20rem;
+		height:16rem;
+	}
+}
+@media only screen and ( max-width: 350px ) {
+	.Hvaing{
+	        margin-top:2rem;
+		width: 15rem;
+		height:19rem;
+	}
+}
+@media only screen and ( max-width: 255px ) {
+	.Hvaing{
+	        margin-top:2rem;
+		width: 10rem;
+		height:30rem;
+	}
+}
+.Hvaing1{
+        font-family: Roboto Slab regular; 
+        text-decoration: none;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+     	font-size: 1.40em; 
+	line-height: 1.0em;
+         display: block;
+	color:#555555;
+
+       
+	
+}
+.Hvaing11{
+        font-family: Roboto Slab regular; 
+        text-decoration: none;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+     	font-size: 1.40em; 
+	line-height: 1em;
+        display: block;
+	color:#555555;
+
+       
+	
+}
+.Hvaing2{
+        font-family: Roboto Slab regular; 
+        text-decoration: none;
+	text-align: center;
+     	font-size: 1.40em; 
+	line-height: 4em;
+	text-align: center;
+        margin-left:auto;
+	margin-right: auto;
+	color:#555555;
+	display: block;
+
+       
+	
+}
+.Hvaing3{
+        border: 0px solid blue;
+	width: 53px;
+	height: 13px;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 1;
+	display: block;
+	position: relative;
+}
+.services{
+	display: block;
+	box-sizing: border-box;
+
+	border: 0px solid blue;
+	width: 71.3%;
+	height:100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3.0rem;
+}
+@media only screen and ( max-width: 1800px ) {
+	.services{
+		width: 90%;
+	}
+}
+@media only screen and ( max-width: 1400px ) {
+	.services{
+		width: 100%;
+	}
+}
+@media only screen and ( max-width: 1200px ) {
+	.services{
+		width: 98%;
+	}
+}
+@media only screen and ( max-width: 1100px ) {
+	.services{
+		width: 100%;
+	}
+}
+.footer{
+       
+	border: 0px solid grey;
+	width: 15em;
+	height:4em;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	z-index: 3;
+	display: block;
+	position: relative;
+}
+@media only screen and ( max-width: 260px ) {
+	.footer{
+		width:10em;
+		height:3em;
+	}
+}
+.footer2{
+	font-family: Montserrat regular; 
+        text-decoration: none;
+	text-align: center;
+     	font-size: 1.0em; 
+	line-height: 1.5em;
+	color:#555555;
+	font-weight: bold;
+	z-index: 3;
+	display: block;
+	position: relative;
+}
+.btn{
+       
+	border: 0px solid blue;
+	width: 28em;
+	height:3em;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1em;
+	
+}
+@media only screen and ( max-width: 500px ) {
+	.btn{
+		width:20em;
+	}
+}
+@media only screen and ( max-width: 350px ) {
+	.btn{
+		width:15em;
+	}
+}
+@media only screen and ( max-width: 260px ) {
+	.btn{
+		width:10em;
+		height:6em;
+	}
+}
+.btn2{
+	font-family: Roboto Slab Regular; 
+        text-decoration: none;
+	text-align: center;
+     	font-size: 1.1em; 
+	line-height: 1.5em;
+	color:#555555;
+        display: block;
+}
+.services{
+	display: block;
+	box-sizing: border-box;
+
+	border: 0px solid blue;
+	width: 71.3%;
+	height:100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3.0rem;
+}
+@media only screen and ( max-width: 1800px ) {
+	.services{
+		width: 90%;
+	}
+}
+@media only screen and ( max-width: 1400px ) {
+	.services{
+		width: 100%;
+	}
+}
+@media only screen and ( max-width: 1200px ) {
+	.services{
+		width: 98%;
+	}
+}
+@media only screen and ( max-width: 1100px ) {
+	.services{
+		width: 100%;
+	}
+}
+
+.address1{
+        border: 0px solid red;
+	width: 15rem;
+	height:5rem;
+	
+	margin-left: 20rem;
+	margin-right: auto;
+	margin-top:auto;
+	z-index: 3;
+	
+	display: block;
+	position: relative;
+	
+	
+}
+.cont{
+        border: 0px solid blue;
+	width: 12px;
+	height: 17px;
+	float:left;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 1;
+	display: block;
+	position: relative;
+}
+.ad{
+	font-family: Roboto Slab regular; 
+        text-decoration: none;
+
+     	font-size: 0.90em;
+     	margin-left: 2rem; 
+	line-height: 1.5em;
+	color:#555555;
+	font-weight: bold;
+	z-index: 3;
+	display: block;
+	position: relative;
+}
+.ad1{
+	font-family: Roboto Slab regular; 
+        text-decoration: none;
+        margin-left: 2rem;
+	
+     	font-size: 0.80em; 
+	line-height: 1.5em;
+	color:#646464;
+	
+	z-index: 3;
+	display: block;
+	position: relative;
+}
+.ad2{
+	font-family: Roboto Slab regular; 
+        text-decoration: none;
+	
+	margin-left: 2rem;
+     	font-size: 0.80em; 
+	line-height: 1.5em;
+	color:#646464;
+	
+	z-index: 3;
+	display: block;
+	position: relative;
+}
+.ad3{
+	font-family: Roboto Slab regular; 
+        text-decoration: none;
+	margin-top:-1.50rem;
+	margin-left: 14.70rem;
+     	font-size: 0.90em; 
+	line-height: 1.5em;
+	color:#646464;
+	
+	z-index: 3;
+	display: block;
+	position: relative;
+}
+@media only screen and ( max-width: 1200px ) {
+	.ad3{
+	   margin-top:-2.50rem;
+	}
+}
+@media only screen and ( max-width: 600px ) {
+	.ad3{
+	  display:none;
+	}
+}
+.ad4{
+        font-family: Roboto Slab regular; 
+        text-decoration: none;
+	margin-top:-2rem;
+	margin-left: 14rem;
+     	font-size: 0.90em; 
+	line-height: 1.5em;
+
+	
+	z-index: 3;
+	display: block;
+	position: relative;
+    	color:#c0301c;
+    	}
+@media only screen and ( max-width: 600px ) {
+	.ad4{
+	  display:none;
+	}
+}
+.address2{
+        border: 1px solid red;
+	width: 15rem;
+	height:5rem;
+	
+	margin-left: 20rem;
+	margin-right: auto;
+	margin-top:2rem;
+	z-index: 3;
+	
+	display: block;
+	position: relative;
+	
+	
+}
+.cont3{
+        border: 0px solid blue;
+	width: 15px;
+	height: 11px;
+	float:left;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 1;
+	display: block;
+	position: relative;
+}
+.form{
+        border: 0px solid red;
+	width: 60rem;
+	height:25rem;
+	
+	margin-left: 17rem;
+	margin-right: auto;
+	margin-top:-19rem;
+	z-index: 3;
+	
+	display: block;
+	position: relative;
+	
+	
+}
+@media only screen and ( max-width: 1300px ) {
+	.form{
+		width: 55rem;
+	}
+}
+@media only screen and ( max-width: 1200px ) {
+	.form{
+		width: 20rem;
+		height:35rem;
+	}
+}
+@media only screen and ( max-width: 600px ) {
+	.form{
+	        margin-top:15rem;
+		width: 10rem;
+		margin-left:0rem;
+		height:35rem;
+	}
+}
+@media only screen and ( max-width: 590px ) {
+	.form{
+	       margin-top:15rem;
+	       margin-left:0rem;
+	       	height:20rem;
+	}
+}
+@media only screen and ( max-width: 580px ) {
+	.form{
+	       margin-top:15rem;
+	       margin-left:0rem;
+	       	height:20rem;
+	}
+}
+@media only screen and ( max-width: 570px ) {
+	.form{
+	       margin-top:15rem;
+	       margin-left:0rem;
+	       	height:20rem;
+	}
+}
+@media only screen and ( max-width: 550px ) {
+	.form{
+	       margin-top:15rem;
+	       margin-left:0rem;
+	       	height:20rem;
+	}
+}
+@media only screen and ( max-width: 500px ) {
+	.form{
+	       margin-top:15rem;
+	       margin-left:0rem;
+	       	height:20rem;
+	}
+}
+@media only screen and ( max-width: 400px ) {
+	.form{
+	       margin-left: 0rem;
+	}
+}
+@media only screen and ( max-width: 320px ) {
+	.form{
+	       margin-left: 0rem;
+	}
+}
+@media only screen and ( max-width: 270px ) {
+	.form{
+	       margin-left: 0rem;
+	}
+}
+@media only screen and ( max-width: 220px ) {
+	.form{
+	       margin-left: 0rem;
+	}
+}
+.form1{
+        border: 0px solid blue;
+	width: 27rem;
+	height:7rem;
+	float:left;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:-14rem;
+	z-index: 3;
+	
+	display: block;
+	position: relative;
+	
+	
+}
+@media only screen and ( max-width: 1200px ) {
+	.form1{
+		width: 20rem;
+	}
+}
+@media only screen and ( max-width: 600px ) {
+	.form1{
+		width: 10rem;
+	}
+}
+.form2{
+        border: 0px solid red;
+	width: 27rem;
+	height:7rem;
+	float:right;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:-14rem;
+	z-index: 3;
+	
+	display: block;
+	position: relative;
+	
+	
+}
+@media only screen and ( max-width: 1200px ) {
+	.form2{
+		width: 20rem;
+		margin-top:-7rem;
+		margin-right: 0rem;
+	
+	
+		
+	}
+}
+@media only screen and ( max-width: 600px ) {
+	.form2{
+		width: 10rem;
+		margin-top:-7rem;
+		margin-right: 0rem;
+	}
+}
+.form3{
+        border: 0px solid green;
+	width: 58.5rem;
+	height:8rem;
+	float:left;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:-6rem;
+	z-index: 3;
+	
+	display: block;
+	position: relative;
+	
+	
+}
+@media only screen and ( max-width: 1300px ) {
+	.form3{
+		width: 55rem;
+	}
+}
+@media only screen and ( max-width: 1200px ) {
+	.form3{
+	        margin-top:0rem;
+		width: 20rem;
+	}
+}
+@media only screen and ( max-width: 600px ) {
+	.form3{
+	        margin-top:0rem;
+		width: 10rem;
+	}
+}
+.form4{
+        border:0px solid #555555;
+	width: 40rem;
+	height:8rem;
+        float:left;
+	margin-left:auto;
+	margin-right: auto;
+	margin-top:1rem;
+	z-index: 3;
+	
+	display: block;
+	position: relative;
+	
+	
+}
+
+@media only screen and ( max-width: 1300px ) {
+	.form4{
+		width: 55rem;
+	}
+}
+@media only screen and ( max-width: 1200px ) {
+	.form4{
+	        margin-top:1rem;
+		width: 20rem;
+	}
+}
+@media only screen and ( max-width: 600px ) {
+	.form4{
+	        margin-top:1rem;
+		width: 10rem;
+	}
+}
+
+.inp{
+	height: 2em;
+	line-height: 2em;
+}
+.txt{
+        width: 59rem;
+	height: 7em;
+	color: #646464;
+	line-height: 2em;
+	resize: none; /* Запрещаем изменять размер */
+}
+.order{
+	border: 1px solid #555555;
+	width: 22rem;
+
+	color: #555555;
+	padding-top:7px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-top: 1em;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	font-size: .9em;
+	font-family: Roboto Slab regular;
+	font-style: normal;
+}
+@media only screen and ( max-width: 1200px ) {
+	.order{
+		width: 15rem;
+	}
+}
+@media only screen and ( max-width: 600px ) {
+	.order{
+		width: 7rem;
+	}
+}
+.order1{
+	border: 1px solid #555555;
+	width: 55rem;
+	
+	color: #555555;
+	padding-top:7px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-top: 1em;
+	margin-left: 1.5rem;
+	margin-right: auto;
+	display: block;
+	font-size: .9em;
+	font-family: Roboto Slab regular;
+	font-style: normal;
+}
+@media only screen and ( max-width: 1300px ) {
+	.order1{
+		width: 50rem;
+	}
+}
+@media only screen and ( max-width: 1200px ) {
+	.order1{
+		width: 15rem;
+	}
+}
+@media only screen and ( max-width: 600px ) {
+	.order1{
+		width: 5rem;
+	}
+}
+.feat3{
+	font-size: 100%; 
+
+	font-family: Roboto Slab regular; 
+	font-style: normal;
+        color: #555555;
+        text-align: center;
+        line-height: 2em;
+        
+	border: 1px solid #555555;
+/*        -webkit-border-radius:auto;
+        -moz-border-radius: auto;
+        border-radius: auto; */
+	margin-top: 1em;
+	margin-left: 2rem;
+	margin-right: 2em;
+        height: 3rem;
+	padding-left: 1.1em;
+	padding-right: 1.1em;
+        background:white;
+
+        cursor: pointer;
+        display: block;
+}
+@media only screen and ( max-width: 600px ) {
+	.feat3{
+		width: 9rem;
+		margin-left: auto;
+	        margin-right:auto;
+	        font-size: 90%; 
+	         
+	         	
+	}
+}
+.feat3:hover{
+	background: radial-gradient(circle, #aca8a8, #a8132a);
+}
+	
+.address1{
+        border: 0px solid blue;
+	width: 15rem;
+	height:5rem;
+	
+	margin-left: 0rem;
+	margin-right: auto;
+	margin-top:auto;
+	z-index: 3;
+	
+	display: block;
+	position: relative;
+	
+	
+}
+@media only screen and ( max-width: 260px ) {
+	.address1{
+		width: 11em;
+	}
+}
+
+.cont{
+        border: 0px solid blue;
+	width: 12px;
+	height: 17px;
+	float:left;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 1;
+	display: block;
+	position: relative;
+}
+.ad{
+	font-family: Roboto Slab regular; 
+        text-decoration: none;
+
+     	font-size: 0.90em;
+     	margin-left: 2rem; 
+	line-height: 1.5em;
+	color:#555555;
+	font-weight: bold;
+	z-index: 3;
+	display: block;
+	position: relative;
+}
+.ad1{
+	font-family: Roboto Slab regular; 
+        text-decoration: none;
+        margin-left: 2rem;
+	
+     	font-size: 0.80em; 
+	line-height: 1.5em;
+	color:#646464;
+	
+	z-index: 3;
+	display: block;
+	position: relative;
+}
+.ad2{
+	font-family: Roboto Slab regular; 
+        text-decoration: none;
+	
+	margin-left: 2rem;
+     	font-size: 0.80em; 
+	line-height: 1.5em;
+	color:#646464;
+	
+	z-index: 3;
+	display: block;
+	position: relative;
+}
+
+.address2{
+        border: 0px solid blue;
+	width: 15rem;
+	height:5rem;
+	
+	margin-left: 0rem;
+	margin-right: auto;
+	margin-top:2rem;
+	z-index: 3;
+	
+	display: block;
+	position: relative;
+	
+	
+}
+@media only screen and ( max-width: 260px ) {
+	.address2{
+		width: 11em;
+	}
+}
+.services{
+	display: block;
+	box-sizing: border-box;
+
+	border: 0px solid blue;
+	width: 100%;
+
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20.0rem;
+}
+@media only screen and ( max-width: 1800px ) {
+	.services{
+		width: 90%;
+	}
+}
+@media only screen and ( max-width: 1400px ) {
+	.services{
+		width: 100%;
+	}
+}
+@media only screen and ( max-width: 1200px ) {
+	.services{
+		width: 98%;
+	}
+}
+@media only screen and ( max-width: 1100px ) {
+	.services{
+		width: 100%;
+	}
+}
+.socials{
+        border: 1px solid transparent;
+	width: 100%;
+	height:20rem;
+	background:#c0301c;
+	margin-left: auto;
+	margin-right:auto;
+	margin-top:20rem;
+	z-index: 3;
+	
+	display: block;
+	position: relative;
+	
+	
+}
+
+.socials1{
+        border: 1px solid transparent;
+	width: 13.75rem;
+	height:5rem;
+	margin-top:7rem;
+	margin-left: auto;
+	margin-right:auto;
+
+}
+@media only screen and ( max-width: 260px ) {
+	.socials1{
+		width:13rem;
+		height:5rem;
+	}
+}
+@media only screen and ( max-width: 220px ) {
+	.socials1{
+	        
+		width:12.75rem;
+		height:5rem;
+	}
+}
+@media only screen and ( max-width: 215px ) {
+	.socials1{
+	        margin-top:5rem;
+		width:7rem;
+		height:6rem;
+	}
+}
+.socials2{
+        border: 0px solid red;
+	width: 20rem;
+	height:2rem;
+	margin-top:2rem;
+	margin-left: auto;
+	margin-right:auto;
+
+}
+@media only screen and ( max-width: 350px ) {
+	.socials2{
+		width:15rem;
+		height:3rem;
+	}
+}
+@media only screen and ( max-width: 260px ) {
+	.socials2{
+		width:11rem;
+		height:3rem;
+	}
+}
+
+.tw{
+        border: 0px solid blue;
+	width: 35px;
+	height: 35px;
+	float:left;
+	margin-left: 1rem;
+	margin-right: auto;
+	z-index: 1;
+	display: block;
+	position: relative;
+}
+
+
+.tw1:hover{
+        -webkit-border-radius:15px;
+        -moz-border-radius: 15px;
+        border-radius: 15px; 
+        background: radial-gradient(circle, #aca8a8, #a8132a);
+	opacity: 3.75;
+}
+.tw1{
+        border: 0px solid blue;
+	width: 35px;
+	height: 35px;
+	float:left;
+	margin-left: 1rem;
+	margin-right: auto;
+	z-index: 1;
+	display: block;
+	position: relative;
+}
+.ad5{
+	font-family: Roboto Slab regular; 
+        text-decoration: none;
+	margin-top:auto;
+	margin-left:auto;
+     	font-size: 0.80em; 
+	line-height: 1.5em;
+	color:#ffffff;
+	text-align:center;
+	z-index: 3;
+	display: block;
+	position: relative;
+}
+
+.socialshr{
+     border-top: 2px solid #ffffff; 
+     width: 25%;
+     margin-top:4rem;
+     margin-left:auto; 
+     margin-right: auto;	
+     display: block;
+     position: relative;
+}
+@media only screen and ( max-width: 215px ) {
+	.socialshr{
+	        width: 45%;
+		margin-top:5rem;
+	}
+}
+
+/*slider at Igor v.4.02*/
+#slider_1{/*общий DIV слайдера*/
+	border: 0px solid blue/*transparent*/;
+	width: 71.3%;
+	height: 3.0625rem;
+	margin: 0;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40rem;
+	padding: 0;
+
+	box-sizing: border-box;
+	display: block;
+	overflow: hidden;
+}
+@media only screen and ( max-width: 700px ) {
+	#slider_1{
+	        width: 100%;
+	
+	}
+}
+@media only screen and ( max-width: 500px ) {
+	#slider_1{
+	        width: 100%;
+	
+	}
+}
+@media only screen and ( max-width: 360px ) {
+	#slider_1{
+	        width: 100%;
+	
+	}
+}
+#slider_1 > #sliderTool{/*общий DIV элементов управления слайдера. На текущий момент (15.09.2019) поддерживаются только кнопки "left"-"Right", которые позиционируются соответственно по левому и правому краям <div id="sliderTool">*/
+	border: 1px solid transparent;
+	display: block;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	
+	background-color: transparent;
+	width: 100%;
+	height: 100%;
+}
+#slider_1 > .slide{
+	box-sizing: border-box;
+	display: block;
+	position: relative;
+	margin: 0;
+	padding: 0;
+
+	border: 1px solid transparent;
+	height: 3.0625rem;
+	width: 25%;
+	text-align: center;
+	color: #ff5500;
+
+        background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
